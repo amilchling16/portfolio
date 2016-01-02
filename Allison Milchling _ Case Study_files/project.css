@@ -1,6 +1,10 @@
-/* Styling for the /blog page */
+/* Styling for the project pages */
 
-/* Blog nav */
+address {
+    font-size: .9rem;
+    text-align: center;
+}
+/* Project nav */
 
 #secondary-nav-container {
     display: flex;
@@ -39,48 +43,80 @@
     color: #e5dc00;
 }
 
-/* Medium embed stylings */
 
-#latest h4 {
-    text-align: center;
-    color: #00d08d;
-    font-size: 1.2rem;
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
+/* Project content */
 
-#blog-area {
+
+#project-area {
     background-color: #FFFF4A;
     padding-top: 15px;
-}
-#blog-content {
-	margin: auto;
-}
-
-#blog-entry {
-	padding: 15px;
-    margin: auto;
-}
-
-#blog-entry iframe{
-    width: 650px;
-    margin: auto;
-}
-
-#medium {
-	text-align: center;
-    color: #00d08d;
-    font-style: italic;
-    font-size: 1rem;
     padding-bottom: 50px;
 }
 
-#medium a{
-	text-align: center;
-    color: #00d08d;
-    font-style: italic;
-    font-size: 1rem;
+#project-text {
+    background-color: white;
+    margin: auto;
+    max-width: 70%;
+    width: 1000px; 
+    padding: 80px;
+    padding-top: 50px;
 }
+
+#project-text h4 {
+    color: #00d08d;
+    font-size: 1.3rem;
+    margin-bottom: 0px;
+}
+
+#project-text p {
+    font-size: 1.1rem;
+}
+
+#one {
+    margin: auto;
+    text-align: center;
+}
+
+
+#one img {
+    width: 500px;
+    padding: 10px;
+}
+
+#two {
+    margin: auto;
+    text-align: center;
+}
+
+
+#two img {
+    width: 350px;
+    padding: 10px;
+}
+
+#three {
+    margin: auto;
+    text-align: center;
+}
+
+
+#three img { 
+    width: 200px;
+    padding: 10px;
+}
+
+#project-nav {
+    margin: auto;
+    padding-top: 20px;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #00d08d;
+}
+
+#project-nav a{
+    color: #00d08d;
+}
+
 
 /* Footer */
 
