@@ -108,6 +108,17 @@ address {
     padding: 10px;
 }
 
+#three-gif {
+    margin: auto;
+    text-align: center;
+}
+
+
+#three-gif img { 
+    width: 200px;
+    max-width: 95%;
+    padding: 10px;
+}
 
 #project-nav {
     margin: auto;

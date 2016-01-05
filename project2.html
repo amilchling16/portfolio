@@ -7,7 +7,16 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300|Merriweather+Sans:800" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/css/index.css" type="text/css" />
     <link rel="stylesheet" href="/css/project.css" type="text/css" />
-    <script async src="https://static.medium.com/embed.js"></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-71990800-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
   </head>
 
   <body>
@@ -24,7 +33,7 @@
         <li><a href="index.html#about-area">ABOUT</a></li>
         <li><a class="dark-yellow" href="index.html#portfolio-area">PORTFOLIO</a></li>
         <li><a href="/blog">BLOG</a></li>
-        <li><a href="/contact">CONTACT</a></li>
+        <!-- phase2 <li><a href="/contact">CONTACT</a></li> -->
       </ul>
     </div>
   </div>
@@ -33,55 +42,55 @@
     <!-- Content Section -->
     <div id="project-area">
        <div id="port-header">
-        <h2 class="header teal-header">HOMEPAGE CASE STUDY</h2>
+        <h2 class="header teal-header">ONBOARDING + PRICING CASE STUDY</h2>
       </div>
       <div id="project-text">
           <h4>CHALLENGE</h4>
-          <p>The existing version of this productivity app was composed of several modules housing individual features. This isolated configuration created a confusing disconnect, making it hard for a user to understand how it was supposed to work. This frustrating and confusing experience proved to be too daunting for the average user to overcome on their own.</p>
-          <div id="one">
-            <img src="../images/apporiginal.jpg">
+          <p>After analyzing thousands of customer support cases, it became apparent that a large segment of new users did not know how to use the app and its functions. Our existing onboarding was oversimplified and disconnected from the app itself, making it hard to understand a) how to download all components and b) how to use features together to make the app work.</p>
+          <div id="two">
+             <img src="../images/onboardingold1.jpg">
+             <br><img src="../images/onboardingold2.jpg"><br>
+             <img src="../images/onboardingold3.jpg">
           </div>
-          <address>Existing design</address>
-          <p>Busy users expected this productivity tool to be simple and fast to use. In order to deliver this expected experience, I needed to design a dashboard with an instantly understandable workflow of unified features, keeping in mind that our small team needed to recycle as much of the existing design as possible to cut development time. The goal was to pinpoint the exact areas of disconnect and provide both a quick fix and a long term redesign solutions.</p>
-
+          <address>Existing process</address>
+          <p>With the onboarding came confusion about the pricing. The current pricing information was hidden from both prospects and users. Its organization was indigestible, making it confusing for users to find value in paid options - especially when they had no insights into the app beforehand.</p>
+          <p>My task was to make onboarding a more educational and welcoming experience. I was to design a simpler flow using the existing components for a process that was more intuitive than burdensome for the user, while not requiring too much front end work for our two-person dev team.</p>
           <h4>PROCESS</h4>
-          <p>My first task was to fully understand where the breakdown was happening for our users. Which design decisions were unnecessary hurdles that we could remove with a new iteration? I went through thousands of customer support inquiries, tagging the issues that were related to the web app.  
-          </p>
-          <div id="three">
-            <img src="../images/appsketch1.jpg">
-            <img src="../images/appsketch2.jpg">
-            <img src="../images/appsketch3.jpg">
-          </div>
-          <p>
-          The overarching issue I discovered was that the relationship between the two main features (creating “blocks”, then scheduling them) were not understood. The second scheduling step was given greater visual hierarchy than the first step. This created an apparent flow that was directly opposite of the correct sequence needed to successfully use the tool. 
-           </p><p>
-          I knew that the relationship between those two features needed to be improved. But before I started working at that level, I took a deeper look at each feature individually. For the “blocks feature”, I had discovered in my customer support research that many people did not understand the scope of its function. I needed to more clearly display the standard use cases so that users could fully utilize it. I also found that there were some redundancies in the “scheduling feature” that once removed, would create a simpler experience.
-          </p>
-          <div id="one">
-            <img src="../images/appwhiteboard.jpg">
-          </div>
-          <p>
-          Within this redesign process, I realized that there was an important development opportunity that would be a big win for users, but would not require the development of a new feature. By expanding on more preset values within the block feature, we would be improving on the highest used function within the backend structure we already had in place.
-          </p>
-          <div id="one">
-            <img src="../images/appblockupdate.jpg">
-          </div>
-          <address>Wireframed update to existing block module</address>
-          <p>
-          After identifying the pain points of each feature individually and their interaction as a whole, I began to sketch out updates that would improve the experience. I learned that our oversimplified design for the settings was actually not making the experience simpler. There were components that needed to be added in order to differentiate tasks and create an automatically intuitive experience.
-           </p>
-          <h4>OUTCOME</h4>
-          <p>By using the same footprint, the changes would not cause a drastic learning curve for existing users. Later, the columns could be reversed in order for the entire dashboard to present the features in complete sequential order.
+          <p>I started this project by first studying our own onboarding. I identified the main pain points for our users. The issue that stood out most, besides the out-of-context payment plan selection, was that the last step prompted users to perform a task found in the app, but in an ambiguous, oversimplified context. This felt like a step back when, once selected, users were dropped into the UI for the first time and were left trying to grapple with an unrelated environment. 
           </p>
           <div id="two">
-            <img src="../images/appfinalmockup.jpg">
-            <img src="../images/appmockup.jpg">
+             <img src="../images/onboardingvimeo.jpg">
           </div>
-          <address>A unified block and scheduling module with updated device and session modules to more clearly display settings</address>
           <p>
-          Ultimately it was decided that having the two features in separate modules was not going to work, so I combined the two features within the same module. This helped convey the relationship between the two features, eliminating all guesswork on how they interact.
+          After I had my list of concerns, I conducted industry research, studying what made onboarding experiences successful and what did not. I signed up for many products, identifying which parts of their experience would be useful to my product. I found Vimeo’s onboarding and pricing to be my most inspirational resource, along with UserOnboard. 
+           </p>
+           <div id="two">
+             <img src="../images/onboardingwireframe.jpg">
+             <img src="../images/onboardingwireframe2.jpg">
+          </div><p>
+         I began to layout the standards I wanted to apply to our onboarding. My wishlist included a progress bar, categorized feature lists, less text and more visual explanations, tool tips, and a tour of the application that was most similar to how a user would use the app on their own. I also added a survey to bring in data for us to better understand the demographic of our current userbase and to shed light on possible growth strategies for the future.
+          </p>
+          <h4>OUTCOME</h4>
+          <div id="one">
+            <a href="../images/onboardingmobile1.jpg" target="_blank"><img src="../images/onboardingmobile1.jpg"><a>
+            <a href="../images/onboardingmobile2.jpg" target="_blank"><img src="../images/onboardingmobile2.jpg"><a>
+          </div>
+          <address>Designs translated to mobile app</address>
+          <p>The ultimate design I created utilized the existing UI within the app, while adding a new pricing page that could also repurposed as an outward-facing marketing page.
+          <p>
+          The new pricing page displayed the differentiation in plan tiers with an immediate image, and navigating the specific feature nuances was easier with the categorical separation below. 
+
           </p><p>
-          With this intuitive flow, users could become less dependent on tool tips and supplementary resources to successfully use the app. The new design would aid in speedier user adoption, creating a larger, more self-sufficient userbase.</p>
+          The onboarding tool tip tour is helpful in explaining the current phase of our app design. Leading the new user through the schedule in the proper way allows for users to understand the interaction between the separate modules. It also explains the scope of use for each specific module - this had been undiscoverable in the past design.
+</p>
+<address>Click each image to view larger</address>
+        <div id="one">
+            <a href="../images/onboarding2.jpg" target="_blank"><img src="../images/onboarding2.jpg"></a>
+            <a href="../images/onboarding3.jpg" target="_blank"><img src="../images/onboarding3.jpg"></a>
+            <a href="../images/onboarding4.jpg" target="_blank"><img src="../images/onboarding4.jpg"></a>
+            <a href="../images/onboarding5.jpg" target="_blank"><img src="../images/onboarding5.jpg"></a>
+            <a href="../images/onboarding6.jpg" target="_blank"><img src="../images/onboarding6.jpg"></a>
+          </div>
         </div>
         <div id="project-nav">
           <p><a href="/project1">&larr;</a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html#portfolio-area">&#9783;</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/project3">&rarr;</a></p>
@@ -96,7 +105,8 @@
           <li><a href="index.html#about-area">ABOUT</a></li>
           <li><a href="index.html#portfolio-area">PORTFOLIO</a></li>
           <li><a href="/blog">BLOG</a></li>
-          <li><a href="/contact">CONTACT</a></li>
+          <li><a href="https://docs.google.com/document/d/1y8yuQtC6W8CjZ9o8BmGHnS8nUD6DnekMvJ-ft5DhkLM/edit?usp=sharing" target="_blank">RESUME</a></li>
+          <!-- phase2 <li><a href="/contact">CONTACT</a></li> -->>
         </ul>
       </div>
       <div id="contact-area">

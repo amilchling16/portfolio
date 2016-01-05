@@ -7,7 +7,16 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300|Merriweather+Sans:800" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/css/index.css" type="text/css" />
     <link rel="stylesheet" href="/css/project.css" type="text/css" />
-    <script async src="https://static.medium.com/embed.js"></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-71990800-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
   </head>
 
   <body>
@@ -24,7 +33,7 @@
         <li><a href="index.html#about-area">ABOUT</a></li>
         <li><a class="dark-yellow" href="index.html#portfolio-area">PORTFOLIO</a></li>
         <li><a href="/blog">BLOG</a></li>
-        <li><a href="/contact">CONTACT</a></li>
+        <!-- phase2 <li><a href="/contact">CONTACT</a></li> -->
       </ul>
     </div>
   </div>
@@ -37,51 +46,45 @@
       </div>
       <div id="project-text">
           <h4>CHALLENGE</h4>
-          <p>The existing version of this productivity app was composed of several modules housing individual features. This isolated configuration created a confusing disconnect, making it hard for a user to understand how it was supposed to work. This frustrating and confusing experience proved to be too daunting for the average user to overcome on their own.</p>
+          <p>In the early stages of the company, we were without a product team to guide development. The result was a product with user experience shortcomings that had yet to be folded into the pipeline. The client success team was the interim solution for ensuring users adoption while the product could not yet stand alone. This made client success an integral part of the product for each client. Each strategist’s role was to not only relay email marketing best practices, but also teach clients how to use the product. 
+</p>
           <div id="one">
-            <img src="../images/apporiginal.jpg">
+            <img src="../images/supportbefore.jpg">
           </div>
           <address>Existing design</address>
-          <p>Busy users expected this productivity tool to be simple and fast to use. In order to deliver this expected experience, I needed to design a dashboard with an instantly understandable workflow of unified features, keeping in mind that our small team needed to recycle as much of the existing design as possible to cut development time. The goal was to pinpoint the exact areas of disconnect and provide both a quick fix and a long term redesign solutions.</p>
+          <p>As it stood, phone communication between strategists and clients was the primary way clients were accessing information about the product. The support site was long abandoned and very outdated. I decided that we needed to reincarnate the support site as a useful tool to create autonomy for clients, ensuring that they would more quickly find value in the product and be retained users.
+</p>
 
           <h4>PROCESS</h4>
-          <p>My first task was to fully understand where the breakdown was happening for our users. Which design decisions were unnecessary hurdles that we could remove with a new iteration? I went through thousands of customer support inquiries, tagging the issues that were related to the web app.  
+          <p>First I did an audit of the existing support site. I slashed what was no longer relevant, saving the articles that would be updated and reformatted. I met with the tech specialist to do ensure that the technical documentation was also minimized and updated.  
           </p>
-          <div id="three">
-            <img src="../images/appsketch1.jpg">
-            <img src="../images/appsketch2.jpg">
-            <img src="../images/appsketch3.jpg">
-          </div>
           <p>
-          The overarching issue I discovered was that the relationship between the two main features (creating “blocks”, then scheduling them) were not understood. The second scheduling step was given greater visual hierarchy than the first step. This created an apparent flow that was directly opposite of the correct sequence needed to successfully use the tool. 
+          During my audit, I realized that we had a hidden product feature buried in our app that the team was previously unaware of. The application was linking to support articles individually defining key terms. In order to make this feature reliable, I updated the term definitions, linking them together with both a single “table of contents” style document and tags so that they would be easier and more intuitive to explore.
            </p><p>
-          I knew that the relationship between those two features needed to be improved. But before I started working at that level, I took a deeper look at each feature individually. For the “blocks feature”, I had discovered in my customer support research that many people did not understand the scope of its function. I needed to more clearly display the standard use cases so that users could fully utilize it. I also found that there were some redundancies in the “scheduling feature” that once removed, would create a simpler experience.
+          Next, I took stock of what was missing from the documents that were left. I asked the rest of the team for the FAQs they felt they were explaining over and over again and added them to my list of essential documentation we needed to have be accessible.
+
           </p>
-          <div id="one">
-            <img src="../images/appwhiteboard.jpg">
-          </div>
           <p>
-          Within this redesign process, I realized that there was an important development opportunity that would be a big win for users, but would not require the development of a new feature. By expanding on more preset values within the block feature, we would be improving on the highest used function within the backend structure we already had in place.
+         With all of the FAQs mapped out, I updated the information architecture of the entire site. I reorganized categories, added <a href="https://docs.google.com/document/d/1wu3_qlSMWSCT1TbX_jVeP9U4f0-Mo_5y3mkS6TtfP4U/edit?usp=sharing" target="_blank" alt="Sample 1">new</a> <a href="https://docs.google.com/document/d/1TPQ72zzdABJgTRjVxB_Jk7umT9PUoV6JCW2RBPqg6tc/edit?usp=sharing" target="_blank" alt="Sample 2">ones</a>, and organized them in a flow from onboarding, to basic troubleshooting, through advanced strategies.
           </p>
-          <div id="one">
-            <img src="../images/appblockupdate.jpg">
+           <div id="one">
+            <img src="../images/supportwhiteboard.jpg">
           </div>
-          <address>Wireframed update to existing block module</address>
+          <p>To keep the team enthusiastic about this new resource I was making, I outlined my master plan of all of the new articles I would create organized under the new category structure. This list was drawn up on our office whiteboard to create visible accountability and a clear timeline of when new support articles would be available for use. I prioritized by quarter, checking off each article as it became live.</p>
+          <p>Then I began writing new articles. I asked a few colleagues to contribute, editing their articles and ensuring that each followed the same consistent formatting for ease of use by our clients.</p>
           <p>
-          After identifying the pain points of each feature individually and their interaction as a whole, I began to sketch out updates that would improve the experience. I learned that our oversimplified design for the settings was actually not making the experience simpler. There were components that needed to be added in order to differentiate tasks and create an automatically intuitive experience.
+          Finally, I did a complete overhaul of the site in order to sync it with the company’s brand guidelines. I learned Liquid to edit the UI. This update boosted the sites legitimacy, making it more inviting.
            </p>
           <h4>OUTCOME</h4>
-          <p>By using the same footprint, the changes would not cause a drastic learning curve for existing users. Later, the columns could be reversed in order for the entire dashboard to present the features in complete sequential order.
+          <p>The support site became a reliable tool that we immediately started sharing with clients. Non-strategy phone calls were cut, as clients were directed to the intuitive, self-service resources. We found that the information was more easily retained when clients were given it in writing, rather than over the phone.
           </p>
-          <div id="two">
-            <img src="../images/appfinalmockup.jpg">
-            <img src="../images/appmockup.jpg">
+          <div id="one">
+            <img src="../images/supportafter.jpg">
           </div>
-          <address>A unified block and scheduling module with updated device and session modules to more clearly display settings</address>
+          <address>Updated UI before recategorization</address>
           <p>
-          Ultimately it was decided that having the two features in separate modules was not going to work, so I combined the two features within the same module. This helped convey the relationship between the two features, eliminating all guesswork on how they interact.
-          </p><p>
-          With this intuitive flow, users could become less dependent on tool tips and supplementary resources to successfully use the app. The new design would aid in speedier user adoption, creating a larger, more self-sufficient userbase.</p>
+          The surprise benefit of this project was that the support site became a resource for our internal team as well. Within client success, these articles became a training resource. For the sales department, associates could look up the details of a particular feature to more easily explain it to prospects. The marketing and product teams both recycled the content into thought leadership content visible to the public.
+          </p>
         </div>
         <div id="project-nav">
           <p><a href="/project3">&larr;</a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html#portfolio-area">&#9783;</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/project5">&rarr;</a></p>
@@ -96,7 +99,8 @@
           <li><a href="index.html#about-area">ABOUT</a></li>
           <li><a href="index.html#portfolio-area">PORTFOLIO</a></li>
           <li><a href="/blog">BLOG</a></li>
-          <li><a href="/contact">CONTACT</a></li>
+          <li><a href="https://docs.google.com/document/d/1y8yuQtC6W8CjZ9o8BmGHnS8nUD6DnekMvJ-ft5DhkLM/edit?usp=sharing" target="_blank">RESUME</a></li>
+          <!-- phase2 <li><a href="/contact">CONTACT</a></li> -->
         </ul>
       </div>
       <div id="contact-area">
