@@ -1,11 +1,11 @@
 server {
-	listen 2000 default_server;
+	listen 80 default_server;
 
 	root /var/www/allisonmilchling.com;
 	index index.html index.htm;
 
 	# Make site accessible from http://localhost/
-	server_name localhost;
+	server_name allisonmilchling.com
 
 	location / {
 		# First attempt to serve request as file, then
