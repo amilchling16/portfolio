@@ -5,7 +5,7 @@ server {
 	index index.html index.htm;
 
 	# Make site accessible from http://localhost/
-	server_name allisonmilchling.com
+	server_name allisonmilchling.com;
 
 	location / {
 		# First attempt to serve request as file, then
