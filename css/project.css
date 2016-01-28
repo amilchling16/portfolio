@@ -5,20 +5,20 @@ address {
     text-align: center;
 }
 
-ul {
-    list-style: none;
+ul, menu, dir {
+    list-style: none !important;
+    list-style-type: none !important;
+}
+#bullets li {
+    font-family: 'Lato', sans-serif !important;
+    text-decoration: none !important;
+    font-size: 1.1rem !important;
+
 }
 
-li {
-    font-family: 'Lato', sans-serif;
-    text-decoration: none;
-    font-size: 1.1rem;
-
-}
-
-li:before {
-    content: "❑ ";
-    color: #00d08d;
+#bullets li:before {
+    content: "❑ " !important;
+    color: #00d08d !important;
 }
 
 /* Project nav */
