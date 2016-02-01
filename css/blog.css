@@ -21,8 +21,9 @@
 
 #secondary-nav-elements h2 a{
     font-family: 'Merriweather Sans', sans-serif;
-    color: #00d08d;
-    font-size: 1.2rem;
+    font-weight: 300;
+    color: #c295ff;
+    font-size: 1.1rem;
     letter-spacing: 1px;
 }
 
@@ -32,25 +33,25 @@
 }
 
 #nav-elements li a {
-    color: #00d08d;
+    color: #6f6f6f;
 }
 
 #nav-elements li a:hover{
-    color: #e5dc00;
+    color: #c295ff;
 }
 
 /* Medium embed stylings */
 
 #latest h4 {
     text-align: center;
-    color: #00d08d;
+    color: #6f6f6f;
     font-size: 1.2rem;
     margin-top: 30px;
     margin-bottom: 15px;
 }
 
 #blog-area {
-    background-color: #FFFF4A;
+    background-color: #FFFFFF;
     padding-top: 15px;
 }
 #blog-content {
@@ -69,7 +70,7 @@
 
 #medium {
 	text-align: center;
-    color: #00d08d;
+    color: #6f6f6f;
     font-style: italic;
     font-size: 1rem;
     padding-bottom: 50px;
@@ -77,7 +78,7 @@
 
 #medium a{
 	text-align: center;
-    color: #00d08d;
+    color: #6f6f6f;
     font-style: italic;
     font-size: 1rem;
 }
@@ -93,8 +94,8 @@
     background: #ffffff;
     height: 160px;
     display: flex;
-    font-size: 1rem;
-    color: #00d08d;
+    font-size: .9rem;
+    color: #6f6f6f;
     margin: auto;
     max-width: 900px;
 
@@ -110,7 +111,7 @@
 }
 
 #footer #links-section ul li a{
-    color: #00d08d;
+    color: #6f6f6f;
 }
 
 #footer #contact-area {
@@ -119,5 +120,9 @@
 }
 
 #footer #contact-area a{
-    color: #00d08d;
+    color: #6f6f6f;
+}
+
+#footer #contact-area img{
+    width: 20px;
 }

@@ -12,13 +12,13 @@ ul, menu, dir {
 #bullets li {
     font-family: 'Lato', sans-serif !important;
     text-decoration: none !important;
-    font-size: 1.1rem !important;
+    font-size: 1rem !important;
 
 }
 
 #bullets li:before {
     content: "❑ " !important;
-    color: #00d08d !important;
+    color: #6f6f6f !important;
 }
 
 /* Project nav */
@@ -42,8 +42,9 @@ ul, menu, dir {
 
 #secondary-nav-elements h2 a{
     font-family: 'Merriweather Sans', sans-serif;
-    color: #00d08d;
-    font-size: 1.2rem;
+    font-weight: 300;
+    color: #c295ff;
+    font-size: 1.1rem;
     letter-spacing: 1px;
 }
 
@@ -53,11 +54,11 @@ ul, menu, dir {
 }
 
 #nav-elements li a {
-    color: #00d08d;
+    color: #6f6f6f;
 }
 
 #nav-elements li a:hover{
-    color: #e5dc00;
+    color: #c295ff;
 }
 
 
@@ -65,9 +66,9 @@ ul, menu, dir {
 
 
 #project-area {
-    background-color: #FFFF4A;
+    background-color: #FFFFFF;
     padding-top: 15px;
-    padding-bottom: 50px;
+    padding-bottom: 0px;
 }
 
 #project-text {
@@ -75,18 +76,17 @@ ul, menu, dir {
     margin: auto;
     max-width: 70%;
     width: 1000px; 
-    padding: 80px;
-    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 #project-text h4 {
-    color: #00d08d;
-    font-size: 1.3rem;
+    color: #c295ff;
+    font-size: 1.4rem;
     margin-bottom: 0px;
 }
 
 #project-text p {
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 #one {
@@ -142,11 +142,11 @@ ul, menu, dir {
     padding-top: 20px;
     font-size: 2.5rem;
     text-align: center;
-    color: #00d08d;
+    color: #6f6f6f;
 }
 
 #project-nav a{
-    color: #00d08d;
+    color: #6f6f6f;
 }
 
 
@@ -161,8 +161,8 @@ ul, menu, dir {
     background: #ffffff;
     height: 160px;
     display: flex;
-    font-size: 1rem;
-    color: #00d08d;
+    font-size: .9rem;
+    color: #6f6f6f;
     margin: auto;
     max-width: 900px;
 
@@ -178,7 +178,7 @@ ul, menu, dir {
 }
 
 #footer #links-section ul li a{
-    color: #00d08d;
+    color: #6f6f6f;
 }
 
 #footer #contact-area {
@@ -187,5 +187,9 @@ ul, menu, dir {
 }
 
 #footer #contact-area a{
-    color: #00d08d;
+    color: #6f6f6f;
+}
+
+#footer #contact-area img{
+    width: 20px;
 }
