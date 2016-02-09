@@ -101,6 +101,17 @@ ul, menu, dir {
     padding: 10px;
 }
 
+#onegif {
+    margin: auto;
+    text-align: center;
+}
+
+#onegif img {
+    height: 400px;
+    max-width: 95%;
+    padding: 10px;
+}
+
 #two {
     margin: auto;
     text-align: center;
