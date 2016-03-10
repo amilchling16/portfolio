@@ -101,6 +101,18 @@ ul, menu, dir {
     padding: 10px;
 }
 
+#flow {
+    margin: auto;
+    text-align: center;
+}
+
+
+#flow img {
+    width: 6400px;
+    max-width: 95%;
+    padding: 10px;
+}
+
 #onegif {
     margin: auto;
     text-align: center;
