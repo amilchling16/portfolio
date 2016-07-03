@@ -1,32 +1,51 @@
 /* Main CSS file for AllisonMilchling.com */
 
 /* Fonts */
-h1, h2 {
-    font-family: 'Merriweather Sans', sans-serif;
-    font-weight: 300;
+h1 {
+    font-size: 26px;
+    font-family: 'Lato', sans-serif;
 }
 
-h4, a, p, address {
+
+#me {
+    font-size: 26px;
+    font-family: 'Merriweather Sans', sans-serif;
+    letter-spacing: .85px;
+    color: #C295FF;
+    font-weight: 700;
+}
+
+
+h2 {
+    font-size: 22px;
+    font-family: 'Merriweather Sans', sans-serif;
+    letter-spacing: .85px;
+    font-weight: 700;
+}
+
+
+h3 {
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    color: #3F3F3F;
+}
+
+h4 {
+    font-size: 18px;
+    font-family: 'Merriweather Sans', sans-serif;
+    letter-spacing: .85px;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 400;
+}
+
+
+a, p, address, li {
     font-family: 'Lato', sans-serif;
     text-decoration: none;
 }
 
-
-.bright-yellow {
-    color: #FFFFFF;
-}
-
-.dark-yellow {
-    color: #c295ff !important;
-}
-
-.teal {
-    color: #6f6f6f;
-}
-
-.white {
-    color: white !important;
-}
 
 /* General Fixes */
 
@@ -35,281 +54,352 @@ body {
 }
 
 
-/* Navigation Elements */
+/* SMALL SCREEN */
 
-#nav-elements {
+@media (max-width: 749px) {
+
+
+/* SMALL NAV BAR */
+.s-nav-container {
+    display: flex;
+    justify-content: space-between;
+    height: 87px;
+    box-shadow: 0px 2px 6px 0px #EAEAEA;
+}
+
+
+.s-site-title {
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+
+.s-site-name {
+    list-style-type: none;
+    color: #C295FF;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.s-site-initial {
+    list-style-type: none;
+    color: #C295FF;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 3px;
+}
+
+.s-site-description {
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+
+.s-nav-list {
     display: flex;
     list-style-type: none;
+    font-size: 18px;
+    color: #3F3F3F;
+    margin: 0;
+    padding: 0;
+    padding-top: 32px;
+    padding-right: 20px;
+}
+
+
+.s-nav-option {
+    margin-left: 20px;
+    padding-bottom: 1px;
+}
+
+
+.s-nav-option:hover {
+    margin-left: 20px;
+    border-bottom: 2.5px solid #ECDFFF;
+}
+
+
+.s-nav-option-selected {
+    margin-left: 30px;
+    padding-bottom: 1px;
+    border-bottom: 2.5px solid #C295FF;
+}
+
+/* SMALL FOOTER */
+
+.s-footer-box {
+    margin-top: 70px;
+    background-color: #F8F8F8;
+    height: 160px;
+}
+
+.s-footer-container {
     margin: auto;
-    padding-left: 0px;
-    padding-top: 20px;
-    max-width: 300px;
 }
 
-#nav-elements li {
-    flex-grow: 1;
+.s-footer-social {
+    padding-top: 31px;
+    margin: auto;
     text-align: center;
-    font-size: 1rem;
 }
 
-#nav-elements li a {
-    text-decoration: none;
-    color: #b1b0b0;
+.s-footer-email {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
 }
 
-#nav-elements li a:hover {
-    text-decoration: none;
-    color: #c295ff;
+
+.s-footer-copy {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
 }
 
-.navend {
-    border-bottom: 1px solid #d3d3d3;
-    width: 100%;
+
+/* BIG SCREEN */
+
+@media (min-width: 750px) {
+
+/* BIG NAV BAR */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    height: 87px;
+    box-shadow: 0px 2px 6px 0px #EAEAEA;
 }
+
+
+.site-title {
+    margin: 0;
+    padding: 0;
+    padding-left: 40px;
+    padding-top: 19px;
+}
+
+
+.site-name {
+    list-style-type: none;
+    color: #C295FF;
+    margin: 0;
+    padding: 0;
+}
+
+.site-initial {
+    list-style-type: none;
+    color: #C295FF;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+
+.site-description {
+    margin: 0;
+    padding: 0;
+}
+
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    font-size: 18px;
+    color: #3F3F3F;
+    margin: 0;
+    padding: 0;
+    padding-top: 32px;
+    padding-right: 40px;
+}
+
+
+.nav-option {
+    margin-left: 30px;
+    padding-bottom: 1px;
+}
+
+
+.nav-option:hover {
+    margin-left: 30px;
+    border-bottom: 2.5px solid #ECDFFF;
+}
+
+
+.nav-option-selected {
+    margin-left: 30px;
+    padding-bottom: 1px;
+    border-bottom: 2.5px solid #C295FF;
+}
+
+/* BIG FOOTER */
+.footer-box {
+    margin-top: 70px;
+    background-color: #F8F8F8;
+    height: 87px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    margin: auto;
+}
+
+.footer-social {
+    padding-left: 40px;
+    padding-top: 31px;
+}
+
+.footer-email {
+    padding: 0px;
+    margin: 0px;
+    padding-top: 15px;
+}
+
+
+.footer-copy {
+    padding: 0px;
+    margin: 0px;
+    padding-right: 40px;
+    padding-top: 15px;
+}
+
+}
+
 /* Title Area (Name/Job title) */
 
-#title-area {
-    text-align: center;
-}
-
-#title-area h1 {
-    /* Allison Milching */
-    color: #c295ff;
-    font-size: 2.3rem;
-    margin-top: 60px;
-    margin-bottom: 10px;
-    letter-spacing: 2px;
-}
-
-#title-area h4 {
-    /* UX Designer */
-    color: #6f6f6f;
-    font-size: 1.2rem;
-    margin-top: 0px;
-    padding-left: 10px;
-    padding-right: 10px;
-    letter-spacing: 1px;
-
-}
-
-#title-area img {
-    max-width: 80%;
-    width: 400px;
-    padding-bottom: 40px;
-
-}
-
-/* Background Image */
-
-#title-container {
-    box-shadow: 0px 0px 25px 0px #CCCCCC;
-    min-width: 100%;
-}
-
-/* Section Headers */
-.header {
-    text-align: center;
-    font-size: 1.6rem;
-}
-
-
-.teal-header {
-    color: #6f6f6f;
-    border-bottom: 3px solid #c295ff;
-    width: 320px;
-    max-width: 70%;
-    margin: auto;
-    padding: 20px;
-    margin-bottom: 50px;
-    margin-top: 30px;
-}
-
-
-.dark-yellow-header {
-    color: #6f6f6f;
-    border-bottom: 3px solid #c295ff;
-    width: 320px;
-    max-width: 70%;
-    margin: auto;
-    padding: 20px;
-    margin-bottom: 50px;
-    margin-top: 30px;
-}
-
-
-/* About Section */
-
-#about-area {
-   /* diplay: flex;*/
-   max-width: 80%;
-   width: 1300px;
-   margin: auto;
-   margin-bottom: 70px;
-}
-
-#info {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#info #about-text {
-    flex: 2;
-    font-size: 1.05rem;
-    line-height: 25px;
-    color: #6f6f6f;
-    min-width: 300px;
-}
-
-#info #personal-photo img{
-    flex: 1;
-    padding-right: 50px;
-    padding-top: 24px;
-    width: 200px;
-}
-
-#sig {
-    text-align: right;
-    padding-top: 15px;
-    padding-right: 30px;
-}
-
-#sig img{
-    width: 250px;
-}
-
-/* Portfolio Area */
-
-#portfolio-area {
-    padding-bottom: 50px;
-    background: #FFFFFF;
-
-}
-
-#port-header {
-    margin-top: 40px;
-
-}
-
-/* Layout for case study areas */
-#case-studies {
-
-}
-
-#case-studies h4 {
-    text-align: center;
-    color: #6f6f6f;
-    font-size: 1.2rem;
-    font-style: italic;
+#banner {
     margin-top: 70px;
-    padding-bottom: 30px;
-    padding-top: 20px;
+    margin-bottom: 25px;
+}
+
+
+#banner-image {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+}
+
+#banner-text {
+    margin-top: 20px;
+    margin: auto;
+    text-align: center;
+    width: 530px;
+    max-width: 90%;
+}
+
+#banner-button-container {
+    margin: 0px;
+    padding: 0;
+    display: block;
+    width: 310px;
+    height: 74px;
     margin: auto;
 }
 
 
-.study-container {
+#banner-button {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
+
+
+#banner-button-text {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    top: 37px;
+    left: 80px;
+    width: 166px;
+}
+    
+/* Projects */
+
+#project-section {
+    padding-top: 70px;
+    margin: auto;
+    max-width: 90%;
+    width: 1080px;
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
     justify-content: center;
-    max-width: 80%;
-    margin: auto;
-    text-align: center;
 }
 
-.case-study {
-    background: white;
-    margin-bottom: 40px;
-    margin-right: 20px;
-    margin-left: 20px;
-    width: 260px;
-    height: 260px;
+.project-container {
+    margin: 0px;
+    padding: 10px;
+    padding-bottom: 0;
+    display: block;
+    position: relative;
 }
 
-.case-study img{
-    text-align: center;
-    margin: auto;
-    padding-right: 10px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    width: 190px;
+/* Overlay text for project image on hover */
+.project-overlay-text {
+    position: absolute;
+    z-index: 100;
+    top: 10px;
+    left: 10px;
+    background: rgba(74, 74, 74, .80);
+    color: white;
+    padding: 20px;
+    width: 340px;
+    height: 250px;
+    display: none;
 }
 
-.case-study p {
-    font-family: 'Merriweather Sans', sans-serif;
-    font-weight: 300;
-    color: #6f6f6f;
-    font-size: 1.1rem;
-    margin-top: 0px;
-    padding-bottom: 10px;
+.project-container:hover .project-overlay-text {
+    display: block;
+    cursor: pointer;
 }
 
-#social-icons-contact img {
-    width: 40px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 0px;
-    padding-bottom: 70px;
+/* Contact CTA */
 
-}
-#social-icons-contact {
+#ready {
+    color: #C295FF;
     text-align: center;
     margin: auto;
-    padding-top: 0;
-    margin-top: 0;
-
+    padding: 0px;
+    margin-bottom: 5px;
+    margin-top: 70px;
+    max-width: 90%;
 }
 
-/* Footer */
-
-.footerstart {
-    border-top: 1px solid #c295ff;
-    width: 100%;
-}
-
-#footer {
-    background: white;
-    height: 160px;
-    display: flex;
-    font-size: .9rem;
-    color: #6f6f6f;
-    padding-top: 30px;
+#ready-text {
+    text-align: center;
     margin: auto;
-    max-width: 900px;
-
+    padding: 0px;
+    width: 600px;
+    max-width: 90%;
 }
 
-#footer #links-section {
-    flex: 1;
+#contact-button-container {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    width: 310px;
+    height: 74px;
+    margin: auto;
 }
 
-#footer #links-section ul {
-    list-style-type: none;
-    
+
+#contact-button {
+    margin: 0px;
+    padding: 0px;
+    display: block;
 }
 
-#footer #links-section ul li a{
-    color: #6f6f6f;
+
+#contact-button-text {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    top: 37px;
+    left: 103px;
+    width: 166px;
 }
 
-#footer #contact-area img {
-    width: 25px;
-    padding-left: 15px;
-    padding-top: 10px;
-}
-
-#footer #contact-area {
-    text-align: right;
-    margin-right: 30px;
-}
-
-#footer #contact-area a{
-    color: #6f6f6f;
-}
-
-#footer #contact-area img{
-    width: 20px;
-}
