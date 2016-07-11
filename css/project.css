@@ -1,218 +1,90 @@
-/* Styling for the project pages */
-
-address {
-    font-size: .9rem;
-    text-align: center;
-}
-
-ul, menu, dir {
-    list-style: none !important;
-    list-style-type: none !important;
-}
-#bullets li {
-    font-family: 'Lato', sans-serif !important;
-    text-decoration: none !important;
-    font-size: 1rem !important;
-
-}
-
-#bullets li:before {
-    content: "❑ " !important;
-    color: #6f6f6f !important;
-}
-
-/* Project nav */
-
-#secondary-nav-container {
-    display: flex;
-    max-width: 90%;
-    width: 900px;
-    margin: auto;
-    align-items: flex-end;
-    flex-flow: row wrap;
-}
-
-#secondary-nav-elements {
-    flex-grow: 1;
-}
-
-#secondary-nav-elements h2 {
-    text-align: center;
-}
-
-#secondary-nav-elements h2 a{
+.project-title h1{
     font-family: 'Merriweather Sans', sans-serif;
-    font-weight: 300;
-    color: #c295ff;
-    font-size: 1.1rem;
-    letter-spacing: 1px;
-}
-
-#nav-container {
-    background: #ffffff;
-    padding-bottom: 25px;
-}
-
-#nav-elements li a {
-    color: #6f6f6f;
-}
-
-#nav-elements li a:hover{
-    color: #c295ff;
-}
-
-
-/* Project content */
-
-
-#project-area {
-    background-color: #FFFFFF;
-    padding-top: 15px;
-    padding-bottom: 0px;
-}
-
-#project-text {
-    background-color: white;
-    margin: auto;
-    max-width: 70%;
-    width: 1000px; 
-    padding-bottom: 50px;
-}
-
-#project-text h4 {
-    color: #c295ff;
-    font-size: 1.4rem;
-    margin-bottom: 0px;
-}
-
-#project-text p {
-    font-size: 1rem;
-}
-
-#one {
-    margin: auto;
+    letter-spacing: .85px;
+    color: #C295FF;
+    font-weight: 700;
     text-align: center;
+    margin-top: 40px;
+}
+
+.project-image-main img{
+	width: 800px;
+	max-width: 90%;
+	margin: auto;
+	display: block;
+}
+
+.project-image img{
+	width: 600px;
+	padding-bottom: 20px;
+	max-width: 90%;
+	margin: auto;
+	display: block;
+}
+
+.project-image-last img{
+	width: 600px;
+	padding-bottom: 0px;
+	max-width: 90%;
+	margin: auto;
+	display: block;
+}
+
+.project-image-small {
+	display: flex;
+	justify-content: space-between;
+	width: 600px;
+	margin: auto;
 }
 
 
-#one img {
-    width: 500px;
-    max-width: 95%;
-    padding: 10px;
+#project-image-small1 {
+	width: 155px;
+	height: 222px;
+	margin: 0px;
+	padding: 0px;
 }
 
-#flow {
-    margin: auto;
-    text-align: center;
+.gif img{
+	width: inherit;
+	max-width: 90%;
+	margin: auto;
+	display: block;
+	padding-bottom: 20px;
 }
 
-
-#flow img {
-    width: 6400px;
-    max-width: 95%;
-    padding: 10px;
+.case-study {
+	width: 900px;
+	max-width: 90%;
+	margin: auto;
+	display: block;
 }
 
-#onegif {
-    margin: auto;
-    text-align: center;
+.case-study h2{
+	color: #C295FF;
+	margin-top: 40px;
+	margin-bottom: 0px;
 }
 
-#onegif img {
-    height: 400px;
-    max-width: 95%;
-    padding: 10px;
+.case-study p{
+	margin-top: 0px;
 }
 
-#two {
-    margin: auto;
-    text-align: center;
+.case-study a{
+	color: #3F3F3F;
+	text-decoration: underline;
 }
 
-
-#two img {
-    width: 350px;
-    max-width: 95%;
-    padding: 10px;
+.project-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 174px;
+	margin: auto;
+	margin-top: 70px;
 }
 
-#three {
-    margin: auto;
-    text-align: center;
+#hide {
+	opacity: 0;
 }
 
-
-#three img { 
-    height: 300px;
-    max-width: 95%;
-    padding: 10px;
-}
-
-#three-gif {
-    margin: auto;
-    text-align: center;
-}
-
-
-#three-gif img { 
-    width: 200px;
-    max-width: 95%;
-    padding: 10px;
-}
-
-#project-nav {
-    margin: auto;
-    padding-top: 20px;
-    font-size: 2.5rem;
-    text-align: center;
-    color: #6f6f6f;
-}
-
-#project-nav a{
-    color: #6f6f6f;
-}
-
-
-/* Footer */
-
-#footerbackground {
-	background: #ffffff;
-    margin-top: 0px;
-}
-
-#footer {
-    background: #ffffff;
-    height: 160px;
-    display: flex;
-    font-size: .9rem;
-    color: #6f6f6f;
-    margin: auto;
-    max-width: 900px;
-
-}
-
-#footer #links-section {
-    flex: 1;
-}
-
-#footer #links-section ul {
-    list-style-type: none;
-    
-}
-
-#footer #links-section ul li a{
-    color: #6f6f6f;
-}
-
-#footer #contact-area {
-    text-align: right;
-    margin-right: 30px;
-}
-
-#footer #contact-area a{
-    color: #6f6f6f;
-}
-
-#footer #contact-area img{
-    width: 20px;
-}

@@ -1,5 +1,80 @@
 /* Main CSS file for AllisonMilchling.com */
 
+@-webkit-keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+@-webkit-keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+.hvr-bob {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+
 /* Fonts */
 h1 {
     font-size: 26px;
@@ -41,9 +116,15 @@ h4 {
 }
 
 
-a, p, address, li {
+a, address, li {
     font-family: 'Lato', sans-serif;
     text-decoration: none;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    color: #3F3F3F;
 }
 
 
@@ -71,7 +152,7 @@ body {
 .s-site-title {
     margin: 0;
     padding: 0;
-    padding-left: 20px;
+    margin-left: 20px;
     padding-top: 30px;
 }
 
@@ -110,6 +191,9 @@ body {
     padding-right: 20px;
 }
 
+.s-nav-list a{
+    color: #3F3F3F;
+}
 
 .s-nav-option {
     margin-left: 20px;
@@ -178,8 +262,8 @@ body {
 .site-title {
     margin: 0;
     padding: 0;
-    padding-left: 40px;
-    padding-top: 19px;
+    margin-left: 40px;
+    margin-top: 19px;
 }
 
 
@@ -208,12 +292,16 @@ body {
 .nav-list {
     display: flex;
     list-style-type: none;
+    text-decoration: none;
     font-size: 18px;
-    color: #3F3F3F;
     margin: 0;
     padding: 0;
-    padding-top: 32px;
-    padding-right: 40px;
+    margin-top: 32px;
+    margin-right: 40px;
+}
+
+.nav-list a{
+    color: #3F3F3F;
 }
 
 
@@ -273,8 +361,15 @@ body {
 /* Title Area (Name/Job title) */
 
 #banner {
-    margin-top: 70px;
+    margin-top: 40px;
     margin-bottom: 25px;
+}
+
+#banner p{
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 
@@ -309,6 +404,7 @@ body {
 }
 
 
+
 #banner-button-text {
     margin: 0px;
     padding: 0px;
@@ -324,7 +420,7 @@ body {
     padding-top: 70px;
     margin: auto;
     max-width: 90%;
-    width: 1080px;
+    width: 1090px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -333,7 +429,7 @@ body {
 .project-container {
     margin: 0px;
     padding: 10px;
-    padding-bottom: 0;
+    padding-bottom: 5px;
     display: block;
     position: relative;
 }
@@ -350,6 +446,10 @@ body {
     width: 340px;
     height: 250px;
     display: none;
+}
+
+.project-overlay-text p {
+    color: white;
 }
 
 .project-container:hover .project-overlay-text {
@@ -401,5 +501,35 @@ body {
     top: 37px;
     left: 103px;
     width: 166px;
+}
+
+/* Social Icons */
+
+
+#twitter {
+    padding-top: 2.085px;
+    margin-right: 10px;
+    width: 20px;
+}
+
+#linkedin {
+    padding-top: 2.27px;
+    margin-right: 10px;
+    width: 20px;
+}
+
+#medium {
+    padding-top: 1px;
+    margin-right: 10px;
+    width: 20px;
+}
+
+#pinterest {
+    margin-right: 10px;
+    width: 20px;
+}
+
+#instagram {
+    width: 20px;
 }
 

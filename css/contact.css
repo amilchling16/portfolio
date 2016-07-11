@@ -1,0 +1,157 @@
+/* Styling for the /contact page */
+
+.contact-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 600px;
+    max-width: 90%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.form-container{
+    background-color: #797979; 
+    width: 320px;
+    height: 505px;
+    padding-left: 30px;
+}
+
+.form-title h1{
+    font-family: 'Merriweather Sans', sans-serif;
+    letter-spacing: .85px;
+    font-size: 22px;
+    color: white;
+    margin-top: 40px;
+    padding-left: 10px;
+    display: inline-block;
+}
+
+.forms{
+    color:white;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+#line {
+    width: 280px;
+    height: 32px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    padding-left: 10px;
+    color: #3F3F3F;
+}
+
+#textarea {
+    height: 96px;
+    width: 280px;
+    resize: none;
+    margin-top: 5px;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    padding-left: 10px;
+    padding-top: 10px;
+    color: #3F3F3F;
+}
+
+#submit-button-container {
+    margin: 0px;
+    padding: 0;
+    display: block;
+    width: 280px;
+    height: 74px;
+    margin-top: 10px;
+}
+
+
+#submit-button {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
+
+#submit-button img{
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    width: 280px;
+}
+
+
+#submit-button-text {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    top: 34px;
+    left: 110px;
+    width: 166px;
+}
+
+/* BIG SCREEN */
+
+@media (min-width: 625px) {
+
+
+.info-container {
+    width: 153px;
+    margin-left: 40px;
+    margin-top: 23px;
+}
+
+.contact-info h1{
+    font-family: 'Merriweather Sans', sans-serif;
+    letter-spacing: .85px;
+    font-size: 22px;
+    color: #C295FF;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.contact-info p{
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+
+.contact-info a{
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    color: #3F3F3F;
+}
+
+}
+
+/* SMALL SCREEN */
+
+@media (max-width: 625px) {
+
+.info-container {
+    width: 153px;
+    margin-left: 40px;
+    margin-top: 23px;
+    display: none;
+}
+
+.contact-info h1{
+    font-family: 'Merriweather Sans', sans-serif;
+    letter-spacing: .85px;
+    font-size: 22px;
+    color: #C295FF;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    display: none;
+}
+
+.contact-info p{
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    display: none;
+}
+
+}
+
+
