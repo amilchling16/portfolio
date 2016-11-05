@@ -5,7 +5,7 @@
     <title>Projects - Allison Milchling</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Merriweather+Sans:400,700|Lato:300" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/css/index.css" type="text/css" />
     <link rel="stylesheet" href="/css/project.css" type="text/css" />
     <link rel="shortcut icon" type="image/png" href="images/favicon.jpg"/>
@@ -27,20 +27,20 @@
     <div class="nav-container s-nav-container">
       <a href="/">
       <div class="site-title s-site-title">
-        <h2 class="site-name s-site-name">Allison Milchling</h2>
-        <h2 class="site-initial s-site-initial">AM</h2>
-        <h3 class="site-description s-site-description">UX Designer and Content Architect</h3>
+        <img class="logo" src="../images/am.png">
       </div>
       </a>
-      
+
       <div>
         <ul class="nav-list s-nav-list">
           
           
-          <li class="nav-option s-nav-option"><a href="/">Projects</a></li>
+          <li class="nav-option s-nav-option"><a href="/">Portfolio</a></li>
           </a>
 
           <li class="nav-option s-nav-option"><a href="/about">About</a></li>
+
+          <li class="nav-option s-nav-option"><a href="/process">Process</a></li>
           
           <li class="nav-option s-nav-option"><a href="/contact">Contact</a></li>
 
@@ -53,113 +53,64 @@
       <div class="project-title">
         <h1>Team Management App</h1>
       </div>
-      <div class="project-image-main">
-        <img src="../images/team-management-app-main.png">
-      </div>
 
       <!-- CONTENT -->
       <div class="case-study">
-        <h2>Audience Definition</h2>
-        <p>I was tasked with creating a user-friendly team management app based off of a conceptual prototype and a list of desired features. The app was to have both desktop and mobile versions.</p>
-        <p>The audience for this app was split into two groups. The first target audience was coaches of children’s sports teams. The second audience was professionals who would use this app as a human resources tool in order to manage their coworkers. Although the first release would be as a coaching app, my design would have to be easily translatable to a professional team management app for it’s second release.</p>
-      </div>
+        <h2>Problem: Positivity is not an explicit component of team management</h2>
+        <p>I was tasked with creating a user-friendly team management app based off of a partial mockup and a supplementary list of desired features. The app was to have both desktop and mobile versions for two target user bases: youth sports coaches and professionals managing their coworkers.</p>
+        <p>The foundational goal for this project was to create an app that would help gain traction for the social platform it would be integrating with. However, since the social platform was a very new concept, I knew this app would need to stand on it’s own in the team management space. Because the focus was on a positive solution, that unique proposition became my focus.</p>
 
-      <div class="case-study">
-        <h2>Competitor and Industry Research</h2>
-        <p>There was a unique value proposition to this app (positive focus and integration into a unique social platform), but the core features were similar to existing solutions. I studied similar products that focused on coaching, human resources management, manager-subordinate relationships, and personnel-related record keeping.</p>
-        <p>The main takeaway from my research was that no solution provided a prominent relational component (messaging) alongside recording notes and collecting stats. I would need to prioritize the positive messaging component of our app, while ensuring that it fit well within the familiar construct of existing team management products.</p>
-      </div>
+        <h2>Hypothesis: There is a need for a product that promotes positive team management</h2>
+        <p>Team management problems were already being solved with better known applications. I wanted to know how the value proposition of intentional positivity would hold up in this space. I studied and tested products that focused on coaching, human resource management, manager-subordinate relationships, and personnel-related record keeping. The main takeaway from this phase of research was that no solution provided a prominent relational component (messaging), although it was clear that users would utilize it. </p>
+        <p>In order for this new app to reach the business goals it was intended for, I prioritized placement of a positive messaging component, while ensuring that the rest of the functionality fit well within the familiar construct of existing team management products.</p>
 
-       <div class="case-study">
-        <h2>Structural Wireframing</h2>
-        <p></p>
-      </div>
-      
-      <div class="project-image">
-        <img src="../images/team-management-app-wireframes.png">
-      </div>
-
-      <div class="case-study">
-        <h2>Prototyping and Usability Testing</h2>
-        <p>As I worked through each set of wireframes, I uploaded them to Invision to create interactive prototypes to test. I used UserTesting.com to screened for testers who had experience managing teams. The following insights were the most impactful to the design:</p>
+        <h2>User Feedback: The flow needs work and features need reprioritization</h2>
+        <p>For each iteration of my design process, I created prototypes to test on remote unmoderated testers with experience coaching youth sports. The following insights were the most impactful to the design:</p>
       <ul id="bullets">
-          <li id="bullets">Testers found the most value in the “Today’s Goals” screen, so I moved it to become the home screen when logging into the app.</li>
-          <li id="bullets">Special feature names within the app were confusing and unnecessary barriers to user understanding. I updated to a more conventional nomenclature. For terms that were unique to the app, I created more upfront and discoverable ways to quickly introduce them to new users.</li>
-          <li id="bullets">The coach/manager role within the app was clear, but it was harder to understand for players/subordinates. Both the onboarding and message sending features of the app evolved to have a clearer description of how sent messages would be received.</li>
-          <li id="bullets">In early, low fidelity prototypes, testers first impressions were uncertain regarding the capabilities of the app. I pulled the app interface into the earliest part of the user experience to create immediate visibility into the functionality.</li>
-          <li id="bullets">I observed that several functions needed to be accessed by the user on a much less frequent basis than initially assumed. I was able to declutter the navigation bar to create focus around the most highly trafficked options.</li>
+          <li id="bullets">Testers found that the most valuable screen was the “Today’s Goals” overview. I updated the flow so that this screen became the "home screen" that users would be dropped into upon login.</li>
+          <li id="bullets">Special feature names within the app were confusing and unnecessary barriers to user understanding. I updated wording to a more conventional nomenclature. For terms that were unique to the app, I created more intuitive and discoverable ways to introduce them to new users.</li>
+          <li id="bullets">The coach/manager role within the app was clear, but it was harder to understand the role for players/subordinates. Both the onboarding and message sending features of the app evolved to have a clearer description of how sent messages would be received.</li>
+          <li id="bullets">In early, low fidelity prototypes, testers were unable to clearly define the app's purpose upon first glance. I pulled the app interface into the earliest part of the user experience to create immediate visibility into the functionality. With a basic visual design, test session feedback quality was improved.</li>
+          <li id="bullets">I observed that several functions needed to be accessed by the user on a much less frequent basis than I had initially assumed. I was able to declutter the navigation bar to create focus around the most highly trafficked options.</li>
         </ul>
-      </div>
       
-      <div class="project-image">
-        <img src="../images/team-wireframes-2.png">
-      </div>
-      <div class="project-image-last">
-        <img src="../images/team-mobile-prototype.png">
-      </div>
+        <h2>Challenge: Visual design and development implementation</h2>
+        <p>Because I was the only designer working without previously established design guidelines, my simple visual design choices were implemented for version 1.0. </p>
+        <p>I also spent time constructing an intuitive onboarding experience. This would be an advantage over competing products. I had to first work within the preset limitations of email validation and data collection that benefited the business, but not the user. I made sure to mitigate the user taxation by creating a delightful, brief, and transparent signup flow.</p>
+        <p>In order for my designs to be implemented, I worked alongside an under-experienced developer with sensitivities about his limitations. It was not an ideal environment, but ultimately I gained valuable experience in standing firm to protect the user experience while creating paths for the developer to find enough ownership in the product for the outcome to be balanced.</p>
 
-      <div class="case-study">
-        <h2>Navigation and Interaction Design</h2>
-        <p>Because I was the only designer on this project, I also created the final UI designs for version one.</p>
-      </div>
+        <h2>Reflection: What I would do differently and the initial outcome</h2>
+        <p>The way this app integrates with the positive social platform was predetermined and not very unintuitive for users. I would have liked to take a step back and address that integration issue, as it was the root of confusion concerning the positive messaging functionality. </p>
+        <p>This app was being pitched to the Positive Coaching Alliance. Although after this project, I moved to a new opportunity with a stronger development team, I would have enjoyed partnering with such a large organization in order to refine future versions based on the jobs they were seeking to get done. Partnering directly with the user base always makes the work more gratifying.</p>
       
-      <div class="project-image">
-        <img src="../images/team-management-final-a.png">
-      </div>
-      <div class="project-image">
-        <img src="../images/team-management-final-b.png">
-      </div>
-      <div class="project-image-last">
-        <img src="../images/team-management-final-c.png">
-      </div>
-
-      <div class="case-study">
-        <h2>Onboarding Strategy and UI Design</h2>
-        <p>The signup requirements for this app required email validation and a lot of data collection. It was my job to create a warm UI with inviting graphics. I made sure to mitigate the user taxation by creating a delightful, brief, and transparent signup flow.</p>
-      </div>
-      
-      <div class="project-image">
-        <img src="../images/team-mobile-ui.png">
-      </div>
-      <div class="project-image">
-        <img src="../images/onboarding-1.png">
-      </div>
-      <div class="project-image">
-        <img src="../images/onboarding-2.png">
-      </div>
-      <div class="project-image">
-        <img src="../images/onboarding-3.png">
-      </div>
-      <div class="project-image">
-        <img src="../images/onboarding-4.png">
-      </div>
-      <div class="project-image">
-        <img src="../images/onboarding-5.png">
-      </div>
-      <div class="project-image-last">
-        <img src="../images/onboarding-6.png">
       </div>
 
       <!-- NAV -->
+    <div class="nav-box">
     <div class="project-nav">
       <div>
-        <a href="/projects/trip-planner"><img src="../images/previous.png"></a>
+        <a href="/projects/trail-listing-service"><p>< Previous</p></a>
       </div>
       <div>
-        <a href="/"><img src="../images/selected-works.png"></a>
+        <a href="/projects/productivity-app"><p>Next ></p></a>
       </div>
-      <div>
-        <a href="/projects/social-platform"><img src="../images/next.png"></a>
-      </div>
+    </div>
     </div>
   
   
 
    <!-- FOOTER -->
-    <div class="footer-box s-footer-box">
-      <div class="footer-container s-footer-container">
-      <div class="footer-social s-footer-social">
-        
+    <div class="footer-box">
+      <div class="footer-container">
+      
+      <div class="footer-email">
+        <h3>© Allison Milchling 2016</h3>
+      </div>
+      <div class="footer-copy">
+        <a href="mailto:amilchling@gmail.com"><h3>amilchling@gmail.com</h3></a>
+      </div>
+
+      <div class="footer-social">
         <a href="http://twitter.com/amilchling" target="blank">
         <img id="twitter" src="../images/Twitter.png">
         </a>
@@ -179,18 +130,40 @@
         <a href="https://www.instagram.com/amilk.j/" target="blank">
         <img id="instagram" src="../images/Instagram.png">
         </a>
-
-      </div>
-      <div class="footer-email s-footer-email">
-        <p>amilchling@gmail.com</p>
-      </div>
-      <div class="footer-copy s-footer-copy">
-        <p>© Allison Milchling 2016</p>
-      </div>
-      </div>
+    </div> 
+    </div></div>
     </div>
 
-</div>
+      <div class="s-footer-box">
+      <div class="footer-container s-footer-container">
+            <div class="s-footer-social">
+        <a href="http://twitter.com/amilchling" target="blank">
+        <img id="twitter" src="../images/Twitter.png">
+        </a>
+
+        <a href="https://www.linkedin.com/in/allisonmilchling" target="blank">
+        <img id="linkedin" src="../images/LinkedIn.png">
+        </a>
+
+        <a href="https://medium.com/@amilchling" target="blank">
+        <img id="medium" src="../images/Medium.png">
+        </a>
+
+        <a href="https://www.pinterest.com/amj516/" target="blank">
+        <img id="pinterest" src="../images/Pinterest.png">
+        </a>
+
+        <a href="https://www.instagram.com/amilk.j/" target="blank">
+        <img id="instagram" src="../images/Instagram.png">
+        </a>
+    </div> 
+      <div class="s-footer-copy">
+        <a href="mailto:amilchling@gmail.com"><h3>amilchling@gmail.com</h3></a>
+      </div>
+            <div class="s-footer-email">
+        <h3>© Allison Milchling 2016</h3>
+      </div>
+    </div>
 
   </body>
 </html>

@@ -1,70 +1,75 @@
 /* Styling for the /contact page */
 
+.contact-box {
+    padding-bottom: 100px;
+    padding-top: 30px;
+    background-color: #F2F2F2;
+
+}
+
+.contact-box h2{
+    text-shadow: 3px 0 #D9A2A9;
+}
+
 .contact-section{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    width: 600px;
-    max-width: 90%;
-    margin: auto;
-    margin-top: 40px;
 }
 
-.form-container{
-    background-color: #797979; 
-    width: 320px;
-    height: 505px;
-    padding-left: 30px;
-}
 
-.form-title h1{
-    font-family: 'Merriweather Sans', sans-serif;
-    letter-spacing: .85px;
-    font-size: 22px;
-    color: white;
-    margin-top: 40px;
-    padding-left: 10px;
-    display: inline-block;
+.form-title {
+    color: #4A4A4A;
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
 }
 
 .forms{
-    color:white;
-    font-size: 16px;
-    font-family: 'Lato', sans-serif;
+    color: #4A4A4A;
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
 }
 
+
 .line {
-    width: 280px;
-    height: 32px;
+    width: 500px;
+    height: 40px;
     margin-bottom: 20px;
     margin-top: 5px;
-    font-size: 16px;
-    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
     padding-left: 10px;
-    color: #3F3F3F;
+    color: #4A4A4A;
+    border-style: solid;
+    border-width: 0px;
+    border-color: white;
 }
 
 #textarea {
-    height: 96px;
-    width: 280px;
+    height: 120px;
+    width: 500px;
     resize: none;
     margin-top: 5px;
     font-size: 16px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Rubik', sans-serif;
     padding-left: 10px;
-    padding-top: 10px;
-    color: #3F3F3F;
+    padding: 10px;
+    color: #4A4A4A;
+    border-style: solid;
+    border-width: 0px;
+    border-color: white;
 }
 
 #submit-button-container {
     margin: 0px;
     padding: 0;
     display: block;
-    width: 280px;
-    height: 74px;
+    width: 323px;
+    height: 93px;
     margin-top: 10px;
+    margin: auto;
 }
-
 
 #submit-button {
     margin: 0px;
@@ -72,21 +77,12 @@
     display: block;
 }
 
-#submit-button img{
-    margin: 0px;
-    padding: 0px;
-    display: block;
-    width: 280px;
-}
-
-
 #submit-button-text {
     margin: 0px;
     padding: 0px;
     position: relative;
-    top: 34px;
-    left: 110px;
-    width: 166px;
+    top: 45px;
+    left: 128px;
 }
 
 /* BIG SCREEN */
@@ -101,10 +97,10 @@
 }
 
 .contact-info h1{
-    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
     letter-spacing: .85px;
     font-size: 22px;
-    color: #C295FF;
+    color: #4A4A4A;
     padding-bottom: 0px;
     margin-bottom: 0px;
 }
@@ -119,7 +115,7 @@
     padding-top: 0px;
     margin-top: 0px;
     margin-bottom: 25px;
-    color: #3F3F3F;
+    color: #4A4A4A;
 }
 
 }
@@ -136,10 +132,10 @@
 }
 
 .contact-info h1{
-    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
     letter-spacing: .85px;
     font-size: 22px;
-    color: #C295FF;
+    color: #4A4A4A;
     padding-bottom: 0px;
     margin-bottom: 0px;
     display: none;
@@ -150,6 +146,15 @@
     margin-top: 0px;
     margin-bottom: 25px;
     display: none;
+}
+
+.forms {
+    width: 90%;
+}
+
+.line, #textarea {
+    padding-left: 0;
+    width: 100%;
 }
 
 }

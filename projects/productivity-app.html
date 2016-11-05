@@ -5,7 +5,7 @@
     <title>Projects - Allison Milchling</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Merriweather+Sans:400,700|Lato:300" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/css/index.css" type="text/css" />
     <link rel="stylesheet" href="/css/project.css" type="text/css" />
     <link rel="shortcut icon" type="image/png" href="images/favicon.jpg"/>
@@ -24,23 +24,24 @@
   <body>
 
    <!-- NAV BAR -->
+    <!-- NAV BAR -->
     <div class="nav-container s-nav-container">
       <a href="/">
       <div class="site-title s-site-title">
-        <h2 class="site-name s-site-name">Allison Milchling</h2>
-        <h2 class="site-initial s-site-initial">AM</h2>
-        <h3 class="site-description s-site-description">UX Designer and Content Architect</h3>
+        <img class="logo" src="../images/am.png">
       </div>
       </a>
-      
+
       <div>
         <ul class="nav-list s-nav-list">
           
           
-          <li class="nav-option s-nav-option"><a href="/">Projects</a></li>
+          <li class="nav-option s-nav-option"><a href="/">Portfolio</a></li>
           </a>
 
           <li class="nav-option s-nav-option"><a href="/about">About</a></li>
+
+          <li class="nav-option s-nav-option"><a href="/process">Process</a></li>
           
           <li class="nav-option s-nav-option"><a href="/contact">Contact</a></li>
 
@@ -52,124 +53,77 @@
     <!-- TITLE -->
     <div class="project-section">
       <div class="project-title">
-        <h1>Productivity App</h1>
+        <h1>Distraction Blocking Productivity App</h1>
       </div>
       <div class="project-image-main">
-        <img src="../images/productivity-app-title-image.png">
+        <img src="#">
       </div>
 
 
     <!-- CONTENT -->
       <div class="case-study">
-        <h2>Background</h2>
-        <p>The existing app had many users, but the scope of use was much narrower than the capabilities of the product. I was tasked with understanding the product from a user perspective. With the knowledge I obtained, I would advocate for solutions to close the gap between the company vision and user adoption, the current product and user pain points.</p>
-      </div>
+        <h2>Problem: Most users aren’t adopting the features that limit their distractions</h2>
+        <p>The existing app had many users, but out of all of the available functionality, only a small percentage of features were being utilized. My goal was to understand why by studying the app from a user perspective for the first time. The first step was to go through all of the feedback we had, but had not yet done anything with.</p>
 
-      <div class="case-study">
-        <h2>User Analysis</h2>
-        <p>I audited and organized thousands of customer support queries. Most issues were rooted in a misunderstanding of the interaction of the two main features: A) choosing distracting sites to blocks (the Block List) and then B) scheduling lengths of time for them to be inaccessible (the Schedule).</p>
-      </div>
-      
+        <h2>Hypothesis: A layout that compliments the simplest user story will increase adoption</h2>
+        <p>I audited and organized thousands of customer support queries. Most issues were rooted in a misunderstanding of the interaction between the two main features: A) choosing distracting sites to blocks (the block list) and then B) scheduling lengths of time for those sites to be inaccessible (the schedule).</p>
+
+        <h2>User Research: Understanding users to understand the current app</h2>
+        <p>After reading the entire support archive and conducting phone interviews with top power users, I was able to understand the overarching tone of our user base. To keep their perspective as the top priority for the rest of the project, I developed two main personas and their unique jobs to be done.</p>
+        <p>Once I understood who the users were, I was able to evaluate the existing product much more deeply. I did a heuristic evaluation of the single web service page and documented the parts of the app where we were misaligned.</p>
+
+      <!--
       <center><iframe src="//www.slideshare.net/slideshow/embed_code/key/zoYS4RwaIVJ2cF" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 90%;" allowfullscreen> </iframe></center>
-
+      -->
           
-      <div class="case-study">
-        <h2>Personas</h2>
-        <p>After reading the support cues, and talking on the phone with users, I was able to understand the overarching tone of our user base. To keep their perspective as the top priority for the rest of the project, I developed two main personas and their unique jobs to be done.</p>
-      </div>
-
-      <div class="project-image-last">
-        <img src="../images/apppersonas.jpg">
-      </div>
-
-      <div class="case-study">
-        <h2>Heuristic Evaluation</h2>
-        <p>How did the user data match up? I analyzed our current app interface to see where we were missing the mark and causing our users heartache.</p>
-      </div>
-
-      <div class="project-image-last">
-        <img src="../images/appheuristic.jpg">
-      </div>
-
-       <div class="case-study">
-        <h2>Alignment</h2>
-        <p>I presented my previous findings to the team to champion their support. Prioritization was made possible by remaining true to our mission statement and the key services we provide. I received feedback to refine my observations into a unified agenda for our team.</p>
-      </div>
-
-      <div class="project-image-last">
-        <img src="../images/appquote.jpg">
-      </div>
-
-      <div class="case-study">
-        <h2>Requirements</h2>
-        <p>After establishing team buy-in, I made a list of our core requirements before I began iterating on design solutions. Our must haves in the new design:</p>
+        <h2>Internal Alignment: Inviting the team to value user experience design</h2>
+        <p>I presented my findings to the team to champion their support. User experience was a new focus for our small team of four. Prioritization was made possible by remaining true to our mission statement and the key services we aimed to provide.</p>
+        
+        <h2>Iterating: Addressing a laundry list of issues</h2>
+        <p>The wireframing process led to properly addressing the following requirements:</p>
         <ul id="bullets">
-          <li id="bullets">Stronger connection between making block list and creating a schedule</li>
-          <li id="bullets">Expanded curated filter list</li>
-          <li id="bullets">Clearer form for custom URL entry</li>
-          <li id="bullets">Consolidated scheduler</li>
-          <li id="bullets">A walkthrough of how the product works</li>
-          <li id="bullets">Differentiated and emphasized “block everything” setting</li>
-          <li id="bullets">A less text-reliant interface for free version</li></ul>
-      </div>
-
-      <div class="project-image-small">
-        <img id="project-image-small1" src="../images/appsketch1.jpg">
-        <img id="project-image-small1" src="../images/appsketch2.jpg">
-        <img id="project-image-small1" src="../images/appsketch3.jpg">
-      </div>
+          <li id="bullets">Create a stronger association between creating and scheduling block lists.</li>
+          <li id="bullets">Expand our curated filter list since user generated filters were not popular.</li>
+          <li id="bullets">To make user generated filtering easier, add instructional text to the form.</li>
+          <li id="bullets">Consolidate the scheduler design so that it meets web standards.</li>
+          <li id="bullets">Equip the user with an initial walkthrough of how the product works.</li>
+          <li id="bullets">When the “block everything” setting is selected, add prominence in the UI to combat confusion.</li>
+          <li id="bullets">With priority to the free version, create a less text-reliant interface to invite growth for our existing international user base.</li></ul>
       
-      <div class="case-study">
-        <h2>Wireframing and Interaction Design</h2>
+        <h2>Challenge: Redirecting away from the initial path</h2>
+        <p>A big discovery that surprised me and the team was that users were only blocking websites and apps that we had curated for them. People were not adding in their own websites beyond our limited selection. And for the handful that tried to, blocking 100% of the site was hard to guarantee depending on the complexity of the site.</p>
+        <p>Given that we hadn’t yet discovered an easy way to make manual entry reliable, it made the most sense to dial back on its prominence. For our general user base, it was clear that adding more options to our curated list would be immediately beneficial for them at the time.</p>
+        <p>However, acquisition remained the business priority. Many of the recommendations within my design were put on the backburner as the focus of our little team moved to a new iOS product. Luckily, I was able to shed light on the importance of user experience which caused the founder to reach out to a UX design agency to handle the next outsourced project. I counted that as a big win for the company.</p>
+
+        <h2>Reflection: Learning how to spread the UX hype</h2>
+        <p>This project took place early in my experience as an explicit user experience designer. Before this point, the UX work I was doing was packaged under customer experience or product marketing. I learned that user insights aren’t exciting to all internal stakeholders, as they can shine a light on negative aspects of the product. I was able to gain understanding around knowing my audience in order to more successfully present my designs. I now make sure to focus on the positive outcomes that happen post-resolution, to be gentle on fragile egos, and to use user research to support to my case instead of the other way around.</p>
+
       </div>
 
-      <div class="project-image">
-        <img src="../images/appblockwires.jpg">
-      </div>
-      <div class="project-image">
-        <img src="../images/appinteractiondesign.jpg">
-      </div>
-      <div class="project-image-last">
-        <img src="../images/appmobiledesign.jpg">
-      </div>
-
-      <div class="case-study">
-        <h2>Final UX Design</h2>
-        <p>The final handoff design with differing layouts for multiple devices and pricing plan-specific funtionalities.</p>
-      </div>
-      
-      <div class="gif">
-        <img src="../images/appmobile.gif">
-      </div>
-
-      <div class="project-image">
-        <img src="../images/appvisualfree.jpg">
-      </div>
-
-      <div class="project-image-last">
-        <img src="../images/appvisualpaid.jpg">
-      </div>
-    </div>
-
-    <!-- NAV -->
+      <!-- NAV -->
+    <div class="nav-box">
     <div class="project-nav">
       <div>
-        <a href="/projects/saas-product-homepage"><img src="../images/previous.png"></a>
+        <a href="/projects/team-management-app"><p>< Previous</p></a>
       </div>
       <div>
-        <a href="/"><img src="../images/selected-works.png"></a>
-      </div>
-      <div>
-        <a href="/projects/user-onboarding"><img src="../images/next.png"></a>
+        <a href="/projects/user-onboarding"><p>Next ></p></a>
       </div>
     </div>
+    </div>
   
+<!-- FOOTER -->
+    <div class="footer-box">
+      <div class="footer-container">
+      
+      <div class="footer-email">
+        <h3>© Allison Milchling 2016</h3>
+      </div>
+      <div class="footer-copy">
+        <a href="mailto:amilchling@gmail.com"><h3>amilchling@gmail.com</h3></a>
+      </div>
 
-      <!-- FOOTER -->
-    <div class="footer-box s-footer-box">
-      <div class="footer-container s-footer-container">
-      <div class="footer-social s-footer-social">
-        
+      <div class="footer-social">
         <a href="http://twitter.com/amilchling" target="blank">
         <img id="twitter" src="../images/Twitter.png">
         </a>
@@ -189,14 +143,38 @@
         <a href="https://www.instagram.com/amilk.j/" target="blank">
         <img id="instagram" src="../images/Instagram.png">
         </a>
+    </div> 
+    </div></div>
+    </div>
 
+      <div class="s-footer-box">
+      <div class="footer-container s-footer-container">
+            <div class="s-footer-social">
+        <a href="http://twitter.com/amilchling" target="blank">
+        <img id="twitter" src="../images/Twitter.png">
+        </a>
+
+        <a href="https://www.linkedin.com/in/allisonmilchling" target="blank">
+        <img id="linkedin" src="../images/LinkedIn.png">
+        </a>
+
+        <a href="https://medium.com/@amilchling" target="blank">
+        <img id="medium" src="../images/Medium.png">
+        </a>
+
+        <a href="https://www.pinterest.com/amj516/" target="blank">
+        <img id="pinterest" src="../images/Pinterest.png">
+        </a>
+
+        <a href="https://www.instagram.com/amilk.j/" target="blank">
+        <img id="instagram" src="../images/Instagram.png">
+        </a>
+    </div> 
+      <div class="s-footer-copy">
+        <a href="mailto:amilchling@gmail.com"><h3>amilchling@gmail.com</h3></a>
       </div>
-      <div class="footer-email s-footer-email">
-        <p>amilchling@gmail.com</p>
-      </div>
-      <div class="footer-copy s-footer-copy">
-        <p>© Allison Milchling 2016</p>
-      </div>
+            <div class="s-footer-email">
+        <h3>© Allison Milchling 2016</h3>
       </div>
     </div>
 

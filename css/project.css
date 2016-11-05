@@ -1,31 +1,35 @@
 .project-title h1{
-    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
     letter-spacing: .85px;
-    color: #C295FF;
-    font-weight: 700;
+    font-weight: 500;
+    font-size: 32px;
     text-align: center;
-    margin-top: 40px;
+    padding-top: 30px;
+    color: #4A4A4A;
+    text-shadow: 3px 0 #D9A2A9;
+
 }
 
+
 .project-image-main img{
-	width: 800px;
-	max-width: 90%;
+	width: 900px;
+	max-width: 75%;
 	margin: auto;
 	display: block;
 }
 
 .project-image img{
-	width: 600px;
+	width: 900px;
 	padding-bottom: 20px;
-	max-width: 90%;
+	max-width: 75%;
 	margin: auto;
 	display: block;
 }
 
 .project-image-last img{
-	width: 600px;
+	width: 900px;
 	padding-bottom: 0px;
-	max-width: 90%;
+	max-width: 75%;
 	margin: auto;
 	display: block;
 }
@@ -54,37 +58,57 @@
 }
 
 .case-study {
-	width: 900px;
-	max-width: 90%;
+	width: 1000px;
+	max-width: 80%;
 	margin: auto;
 	display: block;
 }
 
 .case-study h2{
-	color: #C295FF;
-	margin-top: 40px;
+	color: #4A4A4A;
+	margin-top: 50px;
 	margin-bottom: 0px;
+	font-size: 26px;
 }
 
 .case-study p{
-	margin-top: 0px;
+	margin-top: 10px;
+	color: #4A4A4A;
 }
 
 .case-study a{
-	color: #3F3F3F;
+	color: #D9A2A9;
 	text-decoration: underline;
+}
+
+.case-study li{
+	margin-bottom: 5px;
+	color: #4A4A4A;
+}
+
+.nav-box {
+    background-color: #F2F2F2; 
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 50px;
 }
 
 .project-nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 174px;
+	max-width: 80%;
 	margin: auto;
-	margin-top: 70px;
+}
+
+.project-nav p :hover{
+	color: #D9A2A9;
 }
 
 #hide {
 	opacity: 0;
 }
 
+.bold {
+	font-weight: 500;
+}

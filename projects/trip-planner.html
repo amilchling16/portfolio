@@ -23,24 +23,24 @@
 
   <body>
 
-  <!-- NAV BAR -->
+ <!-- NAV BAR -->
     <div class="nav-container s-nav-container">
       <a href="/">
       <div class="site-title s-site-title">
-        <h2 class="site-name s-site-name">Allison Milchling</h2>
-        <h2 class="site-initial s-site-initial">AM</h2>
-        <h3 class="site-description s-site-description">UX Designer and Content Architect</h3>
+        <img class="logo" src="../images/am.png">
       </div>
       </a>
-      
+
       <div>
         <ul class="nav-list s-nav-list">
           
           
-          <li class="nav-option s-nav-option"><a href="/">Projects</a></li>
+          <li class="nav-option s-nav-option"><a href="/">Portfolio</a></li>
           </a>
 
           <li class="nav-option s-nav-option"><a href="/about">About</a></li>
+
+          <li class="nav-option s-nav-option"><a href="/process">Process</a></li>
           
           <li class="nav-option s-nav-option"><a href="/contact">Contact</a></li>
 
@@ -53,102 +53,63 @@
       <div class="project-title">
         <h1>Trip Planner</h1>
       </div>
-      <div class="project-image-main">
-        <img src="../images/trip-planner-main.png">
-      </div>
 
       <!-- CONTENT -->
       <div class="case-study">
-        <h2>Background</h2>
-        <p>My job was to translate a PDF containing over 60 data points into a trip planner for backpackers. The initial screens I worked on were the input form, the Create Trip screen, and the Trip View screen where users could use the data to have a successful trip. My initial deliverables were high fidelity wireframes that could be sent off to both a developer and a UI designer.</p>
-      </div>
+        <h2>Problem: No holistic trip planner exists for backpackers</h2>
+        <p>The basis of this project was a PDF containing over 60 data points. My job was to take these ideas and develop them into a product that helps backpackers of all skill levels prepare for fun and safe trips. I was to develop the product strategy and interaction design. This was the first phase of this project. My 1.0 design would go on to frame backend development and also be the foundation for later UI design guidelines.</p>
 
-      <div class="case-study">
-        <h2>Data Cataloging</h2>
-        <p>Although the PDF had all of the information I needed to complete this project, I started by creating a more concise inventory of the data points. All of the data was to be input on the Create Trip screen, but my next task was to decide which data would be important to show on the Trip View screen.</p>
-        <p>Next I prioritized each data point that would appear on the Trip View screen. Which data would display exactly as it was submitted? Which data would evolve into a more useful visual interpretation to add maximum value for the user?</p>
-      </div>
+        <h2>Hypothesis: A valuable tool will require a long list of capabilities</h2>
+        <p>There was a whole range of information that I needed to validate: data that seemed vital to have front and center, data that could be automated and processed without user input behind the scenes, and data that had no apparent benefit for the user. I considered the planning process a target user would go through and mocked up my first attempt at a user flow to kick things off. Because of how much data was going on, planning out the function structure happened in a spreadsheet even before the wireframing process began.</p>
+        
 
-      <div class="project-image-last">
-        <img src="../images/trip-planner-information-architecture.png">
-      </div>
+        <h2>User Feedback: Determining a more accurate user flow</h2>
+        <p>The first target user I talked with was a very well known backpacker. His initial reaction to the project was that it was a waste of time. As is the case with other advanced-level backpackers, he uses a series of elaborate spreadsheets to plan his trips and was content with this method. But he was happy to give me both his negative feedback, and feedback as it related to his client base of less experienced hikers.</p>
+        <p>My biggest takeaway from his feedback was understanding the pace in which people planned their trips. Because so much went into planning, it wasn't something that was done in one sitting. At the request of my client, the first iteration of the trip planner design was a single page. The cognitive load for the user was overwhelming. The feedback I received gave me the leverage I needed to finally convert my client to an updated architecture where each step was split out onto it’s own page.</p>
+        <p>I also talked with people who fell into both our target early adopters segment (experienced, ultralight backpackers) as well as the eventual majority user group we were aiming for ("REI hikers” with less experience). This collective feedback helped me rearrange and update the trip planning process so that the flow was a more natural fit and the priority level for each feature was more balanced.</p>
 
-      <div class="case-study">
-        <h2>Mental Model</h2>
-        <p>The last step on my spreadsheet was to establish the priority of each data point. Which data points were a high priority? Which were important, but could be partially hidden within the UI? To figure this out and to be able to start wireframing, I had to understand the mental model behind the target user.</p>
-        <p>Although I had made assumptions while sorting the data, I dove more narrowly into the mindset of a person who would be planning a backpacking trip. I talked with several people who enjoyed backpacking and camping to varying degrees. From there, I was able to establish the expected user flow for creating a new trip.</p>
-      </div>
+        <h2>Iterating: Course corrections for a more approachable product</h2>
+        <p><span class="bold">Content Hierarchy -</span>The flow and nomenclature of the planning process did not match up to reality. I wound up reworking the process:</p>
+        <ul id="bullets">
+          <li id="bullets">Tripmates were added at the beginning of the trip planner because users felt that collaborating with their tripmates was a central part of the planning process.</li>
+          <li id="bullets">Emergency planning was updated to take into consideration both third party emergency planning and people’s desire to have their emergency contacts very well informed.</li>
+        </ul>
+        <p><span class="bold">Navigation and Pacing -</span>Each step of the trip planner became clearly packaged in a collection of pages. I added a side navigation bar to show the progress of each step and to allow the user to skip around to what they wanted to tackle during a single session. </p>
+        <p><span class="bold">Packing Lists -</span>I brought together the previously siloed gear (tent, boots, etc) and consumables (food, fuel, etc) inventories. I also de-prioritized advanced information for each. The original design was overly complex, difficult to navigate around, and gave priority to edge cases: people who were obsessed with cataloging their gear and cutting down weight. The update emphasized a more normal use case: people simply not wanting to forget what they to pack for their trip.</p>
+        <p><span class="bold">Immediate Payout - </span>Once a user completed the large and exciting task of planning their trip, their trip view page was the succinct result that include even more valuable information than what they had manually entered. It was important for the value of the planning to be immediately clear. I designed this page to be easy to navigate. It was also downloadable into a simplified PDF format to print and carry in the field.</p>
 
-      <div class="case-study">
-        <h2>Content Hierarchy</h2>
-        <p>Once my spreadsheet was signed off on, I started organizing the content in low fidelity wireframes. For the Create Trip screen, I framed a step by step process that would meet the needs of both my client and target users. For the Trip View screen, I was able to make progress toward a utilitarian output.</p>
-      </div>
-
-      <div class="project-image">
-        <img src="../images/create-trip-content-hierarchy.png">
-      </div>
-      <div class="project-image">
-        <img src="../images/view-trip-content-hierarchy-a.png">
-      </div>
-      <div class="project-image-last">
-        <img src="../images/view-trip-content-hierarchy-b.png">
-      </div>
-
-      <div class="case-study">
-        <h2>Cognitive Load</h2>
-        <p>The biggest challenge of this project was the volume of data being collected. I was able to talk with my client to eliminate a few fields, but ultimately a lot of information is needed to yield a comprehensive trip.</p>
-        <p>One of my objectives was to create the Cretae Trip experience on a single page. To ensure that users would successfully endure the entire Create Trip form, I knew having the form on a single page was a risky move. However, there were ways to make this single page dynamic enough to create a steady pace for the user. I employed a few tactics to set the form up for success. I added a progress bar to chart navigation throughout the page. And, later in my developer and designer notes, I denoted a hybrid lazy loading screen that would disable form input until previous forms were entered.</p>
-      </div>
-
-      <div class="case-study">
-        <h2>Final Wireframes</h2>
-      </div>
-
-      <div class="project-image">
-        <img src="../images/create-trip-final-wireframe.png">
-      </div>
-      <div class="project-image">
-        <img src="../images/view-trip-final-wireframe.png">
-      </div>
-      <div class="project-image">
-        <img src="../images/view-day-final-wireframe.png">
-      </div>
-
-      <div class="case-study">
-        <h2>Development and UI Design Notes</h2>
-        <p>I created limited prototypes, mood boards, and annotated versions of the final wires as part of the hand-off to the developer and UI designer. These annoteated versions denote the intended interaction design and my recommendations for translating these screens into a successful final product.</p>
-      </div>
-
-      <div class="project-image">
-        <img src="../images/create-trip-final-wireframe-notes.png">
-      </div>
-      <div class="project-image">
-        <img src="../images/create-trip-display.png">
-      </div>
-      <div class="project-image-last">
-        <img src="../images/view-trip-final-wireframe-notes.png">
-      </div>
+        <h2>Reflection: Refining the process and future priorities</h2>
+        <p>This was my first development handoff that did not involve a meeting or presentation. The communication culture of this team was written communication only - mainly through Slack and Trello. I learned that everything I didn’t explicitly record was missed. For things like error messaging, upload interactions, and photo cropping, I had to create detailed documentation. Moving forward, my documentation will be much more extensive and I will also share the greater context using storytelling to make new projects more approachable to developers.</p>
+        <p>Knowing now that user research would end up being a scarce resource, if I could redo how I approached 1.0, it would be to do more user research upfront. This would have brought me to the conclusions regarding flow and nomenclature much earlier in the design process.</p>
+        <p>What I am certain of needing to focus on next with this project is improving upon collaborative trip planning. As it stands, we have a very ambiguous relationship between the trip creator and the tripmates they invite to access the trip. I would like to create a clearer understanding of the way collaborative editing works. I would also like to expand features like checklists, packing lists, and food planning to be equipped for successful group planning.</p>
       
+      </div>
 
       <!-- NAV -->
+    <div class="nav-box">
     <div class="project-nav">
       <div>
-        <img id="hide" src="../images/previous.png">
+        <a href="/projects/trip-viewer-mobile-app"><p>< Previous</p></a>
       </div>
       <div>
-        <a href="/"><img src="../images/selected-works.png"></a>
+        <a href="/projects/trail-listing-service"><p>Next ></p></a>
       </div>
-      <div>
-        <a href="/projects/team-management-app"><img src="../images/next.png"></a>
-      </div>
+    </div>
     </div>
   
   
 <!-- FOOTER -->
-    <div class="footer-box s-footer-box">
-      <div class="footer-container s-footer-container">
-      <div class="footer-social s-footer-social">
-        
+    <div class="footer-box">
+      <div class="footer-container">
+      
+      <div class="footer-email">
+        <h3>© Allison Milchling 2016</h3>
+      </div>
+      <div class="footer-copy">
+        <a href="mailto:amilchling@gmail.com"><h3>amilchling@gmail.com</h3></a>
+      </div>
+
+      <div class="footer-social">
         <a href="http://twitter.com/amilchling" target="blank">
         <img id="twitter" src="../images/Twitter.png">
         </a>
@@ -168,14 +129,38 @@
         <a href="https://www.instagram.com/amilk.j/" target="blank">
         <img id="instagram" src="../images/Instagram.png">
         </a>
+    </div> 
+    </div></div>
+    </div>
 
+      <div class="s-footer-box">
+      <div class="footer-container s-footer-container">
+            <div class="s-footer-social">
+        <a href="http://twitter.com/amilchling" target="blank">
+        <img id="twitter" src="../images/Twitter.png">
+        </a>
+
+        <a href="https://www.linkedin.com/in/allisonmilchling" target="blank">
+        <img id="linkedin" src="../images/LinkedIn.png">
+        </a>
+
+        <a href="https://medium.com/@amilchling" target="blank">
+        <img id="medium" src="../images/Medium.png">
+        </a>
+
+        <a href="https://www.pinterest.com/amj516/" target="blank">
+        <img id="pinterest" src="../images/Pinterest.png">
+        </a>
+
+        <a href="https://www.instagram.com/amilk.j/" target="blank">
+        <img id="instagram" src="../images/Instagram.png">
+        </a>
+    </div> 
+      <div class="s-footer-copy">
+        <a href="mailto:amilchling@gmail.com"><h3>amilchling@gmail.com</h3></a>
       </div>
-      <div class="footer-email s-footer-email">
-        <p>amilchling@gmail.com</p>
-      </div>
-      <div class="footer-copy s-footer-copy">
-        <p>© Allison Milchling 2016</p>
-      </div>
+            <div class="s-footer-email">
+        <h3>© Allison Milchling 2016</h3>
       </div>
     </div>
 
