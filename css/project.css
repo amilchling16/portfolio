@@ -27,6 +27,11 @@
 	display: block;
 }
 
+.project-image-grey {
+	filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+
+}
 
 .case-study {
 	width: 1000px;
