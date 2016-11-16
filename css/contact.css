@@ -61,29 +61,7 @@
     border-color: white;
 }
 
-#submit-button-container {
-    margin: 0px;
-    padding: 0;
-    display: block;
-    width: 323px;
-    height: 93px;
-    margin-top: 10px;
-    margin: auto;
-}
 
-#submit-button {
-    margin: 0px;
-    padding: 0px;
-    display: block;
-}
-
-#submit-button-text {
-    margin: 0px;
-    padding: 0px;
-    position: relative;
-    top: 45px;
-    left: 128px;
-}
 
 /* BIG SCREEN */
 
@@ -156,7 +134,58 @@
     padding-left: 0;
     width: 100%;
 }
+}
 
+@media (min-width: 563px) {
+
+#submit-button-mobile {
+    display: none;
+}
+
+#submit-button-container {
+    margin: 0px;
+    padding: 0;
+    display: block;
+    width: 323px;
+    height: 93px;
+    margin-top: 10px;
+    margin: auto;
+}
+
+#submit-button {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
+
+#submit-button-text {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    top: 45px;
+    left: 128px;
+}
+}
+
+@media (max-width: 562px) {
+
+#submit-button-container {
+    display: none;
+}
+
+#submit-button-mobile {
+    margin: 0px;
+    padding: 0;
+    display: block;
+    width: 323px;
+    margin-top: 10px;
+    margin: auto;
+}
+
+#submit-button-mobile img{
+    padding-top: 20px;
+    width: 323px;
+}
 }
 
 
