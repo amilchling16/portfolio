@@ -240,17 +240,20 @@ body {
 
 .footer-box {
     display:none;
+    border-top: .5px solid #F2F2F2;
 }
 
 
 /* SMALL FOOTER */
 .footer-box {
     display:none;
+    border-top: .5px solid #F2F2F2;
 }
 
 .s-footer-box {
     background-color: #ffffff;
     height: 160px;
+    border-top: .5px solid #F2F2F2;
 }
 
 .s-footer-container {
@@ -286,6 +289,7 @@ body {
 
 .s-footer-box {
     display:none;
+    border-top: .5px solid #F2F2F2;
 }
 
 
@@ -294,6 +298,7 @@ body {
 .footer-box {
     background-color: #ffffff;
     height: 87px;
+    border-top: .5px solid #F2F2F2;
 }
 
 .footer-container {
@@ -411,7 +416,7 @@ body {
     text-shadow: .8vw 0 #D9A2A9;
 }
 
-.error-banner {
+.description-banner {
     padding-top: 30px;
     background-color: #F2F2F2;
     flex: 1;
