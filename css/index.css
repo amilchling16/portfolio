@@ -580,6 +580,7 @@ body {
 
     #s-project-section {
         display: none;
+        padding-bottom: 30px;
     }
 
     #project-section {
@@ -588,6 +589,7 @@ body {
     width: 1600px;
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 30px;
     justify-content: center;
 }
 
@@ -627,6 +629,7 @@ body {
     
     #project-section {
         display: none;
+        padding-bottom: 30px;
     }
 
     #s-project-section{
@@ -635,6 +638,7 @@ body {
         justify-content: center;
         margin: auto; 
         text-align: center;
+        padding-bottom: 30px;
     }
 
     #s-project-section img{
