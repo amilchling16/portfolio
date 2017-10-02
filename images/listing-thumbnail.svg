@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="220px" height="340px" viewBox="0 0 220 340" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>listing-thumbnail</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="40.2450293%" cy="70.0597426%" fx="40.2450293%" fy="70.0597426%" r="31.2626379%" gradientTransform="translate(0.402450,0.700597),scale(1.000000,0.647059),rotate(90.000000),translate(-0.402450,-0.700597)" id="radialGradient-1">
+            <stop stop-color="#EBD3E0" offset="0%"></stop>
+            <stop stop-color="#F0DADD" offset="100%"></stop>
+        </radialGradient>
+        <rect id="path-2" x="0" y="0" width="220" height="340"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-557.000000, -1015.000000)">
+            <g id="listing-thumbnail" transform="translate(557.000000, 1015.000000)">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="Mask" fill="url(#radialGradient-1)" xlink:href="#path-2"></use>
+            </g>
+        </g>
+    </g>
+</svg>

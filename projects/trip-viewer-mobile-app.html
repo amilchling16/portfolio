@@ -5,9 +5,8 @@
     <title>Projects - Allison Milchling</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300|Merriweather+Sans:700,400" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/css/index.css" type="text/css" />
-    <link rel="stylesheet" href="/css/project.css" type="text/css" />
+    <link rel="stylesheet" href="/css/work.css" type="text/css" />
     <link rel="shortcut icon" type="image/png" href="images/favicon.jpg"/>
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -19,244 +18,211 @@
   ga('send', 'pageview');
 
 </script>
-  </head>
 
-  <body>
+</head>
 
-    <!-- NAV BAR -->
-    <div class="nav-container">
-      <a href="/">
-      <div class="site-title">
-        <img class="logo" src="../images/am.png">
-      </div>
+<body>
+
+<!-- NAV -->
+  <div class="nav nav-small">
+  <h2><a href="/">ALLISON MILCHLING</a></h2>
+  <div>
+    <ul id="list">
+    <li id="option"><a href="/">ABOUT</a></li>
+    <li class="option"><a href="/#selected-work">WORK</a></li>
+      <li class="option"><a href="/#selected-writing">WRITING</a></li>
+  </div>
+  </div>
+
+<!-- TITLE -->
+  <div class="title work-title-small">
+  <h1>TRIP VIEWER</h1>
+  </div>
+
+<!-- TITLE IMAGE -->
+  <div id="work-image">
+  <img src="../images/trip-viewer-main.jpg">
+  </div>
+
+<!-- TEXT -->
+  <div class="section">
+  <h2>PROBLEM: Backpackers are required to pack multiple printed and electronic resources to complete a trip safely</h2>
+  <p>The <a href="../projects/trip-planner.html" target="_blank">trip planner web application</a> was created as a simple, thorough tool for backpackers to plan safe trips. However, once on the trail, these backpackers had no way to benefit from the planning they did back home on their computer. People still needed to pack maps, elevation profiles, guidebooks, notebooks, and phones to be properly prepared for their trips.</p>
+  <p>I was tasked with creating a mobile application that translated the appropriate amount of information and resources over to a central mobile solution. This would ensure a substantial user payout during their trip.</p>
+  </div>
+
+<!-- TEXT -->
+  <div class="section">
+  <h2>HYPOTHESIS: Backpackers would benefit from a comprehensive mobile experience on the trail</h2>
+  <p>I went through each feature in the desktop application and gathered the ones that would be the most relevant on the trail. I left out information that was important to know beforehand, but became less valuable once a trip started. For example, whether or not pets are allowed on the trail is a good thing to know beforehand, but once you're on the trail pet-free, that information has already served it's purpose.</p>
+  <p>My strategy for what to focus on broke down into three areas:
+  <ul class="bullets">
+    <li id="point">Things that helped make a safe trip: weather conditions, nearby contacts and amenities, and news alerts.</li>
+    <li id="point">Planning features that would be useful on mobile: packing list, other pre-trip checklists, and a limited version of the daily itinerary for on-the-go planning and reference. </li>
+    <li id="point">Per the original scope of the mobile app from the client, I included a journal within the app. Trip documentation is a common part of the hiking experience and our overarching mission for this project was to create a single, holistic solution under one roof.</li>
+  </ul>
+  </p>
+  </div>
+
+<!-- IMAGE -->
+  <div id="work-image">
+  <img src="../images/trip-viewer-update.jpg">
+  </div>
+
+<!-- TEXT -->
+  <div class="section">
+  <h2>USER FEEDBACK: Hiker mobile usage falls on a spectrum</h2>
+  <p>With limited resources allocated for user research, the feedback for version 1.0 was light and informal. After connecting with ultralight backpackers on Reddit and receiving notes from a couple of team members, I discovered that on-trail mobile usage fell along a spectrum.</p>
+  <p>The primary reason experienced, ultralight backpackers tend to pack their phones is for safety. Preserving battery life is important so that the phone can be used in case of emergency. Offline experiences (whether accessible digitally via airplane mode or physically as printed out PDFs) were essential for this group. This group's approach to the app was as a last-resort reference to check unexpected weather conditions and other volatile characteristics of a hike. For them, if everything was going well, they saw no need for this app.</p>
+  <p>I also discovered -- from the ultralight group's feedback -- that the largest pain point that backpackers have is getting trustworthy information regarding water availability. Our app needed to provide a preliminary approach to solving that problem in order to provide the missing link to a holistic backpacker resource.</p>
+  <p>“REI hikers” were the term we gave less experienced hikers who had a tendency to do less planning beforehand. From talking with this group, I realized that our app would be a larger factor in the success of their experience. This group would rely on the features of our mobile app on a more daily basis compared to the experienced hikers.</p>
+  </div>
+
+<!-- IMAGE -->
+  <div id="work-image">
+  <img src="../images/trip-viewer-wireframes.jpg">
+  </div>
+
+<!-- TEXT -->
+  <div class="section">
+  <h2>FEATURE EDITS: Important information needs to be the easiest to access</h2>
+  <p>Below is how our initial hypothesis evolved based on user feedback:</p>
+  <h3>Trip Main Page</h3>
+  <ul id="bullets">
+    <li id="point">The initial version of this was merely a navigation step. I needed to create a greater, dashboard-style purpose.</li>
+    <li id="point">I created a feed for weather and alerts, allowing for immediate, at-a-glance access to the information that could impact their trip the most.</li>
+    <li id="point">I added a map view of the trail.</li>
+    <li id="point">I created more value around the daily itinerary preview based on whether it was being viewed before, during, or after the trip.</li>
+  </ul>
+  <h3>Map</h3>
+  <ul id="bullets">
+    <li id="point">Because trail navigation is a central part of a backpacking trip, I included basic navigation support despite my initial intention to postpone it for a later iteration.</li>
+  </ul>
+  <h3>Weather Forecasts</h3>
+  <ul id="bullets">
+    <li id="point">It became clear that, in the mind of a hiker, a weather forecast is a type of alert. I combined weather with alerts, creating a central place to access the most impactful information.</li>
+    <li id="point">I linked to specialized forecasts so users could easily navigate to snow and tide charts when applicable.</li>
+    <li id="point">I added a date picker so that the mobile app became useful for checking forecasts for longer trips.</li>
+  </ul>
+  <h3>News and Alerts</h3>
+  <ul id="bullets">
+    <li id="point">I removed this feature because related articles did not pick up traction as an on-trail resource.</li>
+  </ul>
+  <h3>Packing and Checklists</h3>
+  <ul id="bullets">
+    <li id="point">These features are only useful before a trip, so I grouped them to take up less space in the design. </li>
+  </ul>
+  <h3>Crowdsourcing</h3>
+  <ul id="bullets">
+    <li id="point">My client wanted to include a way for users to report water and safety conditions. It was clear that water reporting was one of the most critical things backpackers want to know about, so crowdsouring became our way of addressing that in 1.0.</li>
+  </ul>
+  <h3>Syncing</h3>
+  <ul id="bullets">
+    <li id="point">I had to add clear and simple cues for the user to understand the sync status with the web app.</li>
+  </ul>
+  </div>
+
+<!-- IMAGE -->
+  <div id="work-image">
+  <img src="../images/trip-viewer-proto.gif">
+  </div>
+
+<!-- IMAGE -->
+  <div id="work-image">
+  <img src="../images/trip-viewer-itineraries.jpg">
+  </div>
+
+<!-- TEXT -->
+  <div class="section">
+  <h2>SPECIFIC CHALLENGE: Finding the right solution for itinerary planning</h2>
+  <p>I received varied feedback concerning the process for planning each day’s itinerary. Although I created a very basic solution for 1.0, I needed to make sure it was the right foundation for future iteration. To narrow down the path daily itinerary planning would take, I started by building a prototype for each of the four different ideas that had surfaced in testing. The ideas were a bare bones planner, an incremental checkpoint planner, a map-based planner, and a planner based on a series of points on a spreadsheet. I embedded each idea within the main mobile project. </p>
+  <p>I am still collaborating with my client and the users in order to land on a solution that properly balances functionality for the widest group of use cases. If done the correct way, this feature has the potential to empower a larger range of backpackers. My hypothesis, based on prioritizing "REI hikers", is that text and map-based input will win out over the spreadsheet version.</p>
+  </div>
+
+<!-- IMAGE -->
+  <div id="work-image">
+  <img src="../images/trip-viewer-journal.jpg">
+  </div>
+
+<!-- TEXT -->
+  <div class="section">
+  <h2>REFLECTION: What I would do differently and future plans</h2>
+  <ul id="bullets">
+    <li id="point">I am not content with the layout for the main trip page. I would like to collaborate with a UI designer to prioritize the layout's improvement and work together to establish a final visual design.</li>
+    <li id="point">Because the journaling component is such a large feature, I would remove it from this app and make it a stand alone entity. It would be more inviting to a wider range users -- including those are are not extensively planning their trips.</li>
+    <li id="point">I would also like to explore integrating the resource section of this app (our value proposition within the industry) with GaiaGPS. This would eliminate the burden of continuing to grow navigation functionality in-house. Since GaiaGPS is the best navigation app that hikers are already using, I believe integrating the value of our service into theirs would be a more seamless way to acquire an early user base and to introduce and grow our product within the industry.</li>
+    <li id="point">I also plan to expand the mobile planning functionality to cater to the “REI hiker” segment. Testing has shown that they are the most likely candidates to adopt the limited mobile functionality over the extended web application (which caters to experienced hikers). My current hypothesis is that the mobile app will be the primary resource for “REI hikers”, while the web app will continue to grow with ultralight backpacker-level users.</li>
+  </ul>
+  </div>
+
+
+<!-- OTHER WORK -->
+  <div id="separator">
+  <hr>
+  </div>
+  <div id="other-work-title">
+  <h2>OTHER WORK</h2>
+
+  <div id="work">
+
+  <div class="other-preview">
+  <div class="thumbnail">
+    <a href="../projects/trip-planner.html">
+    <img src="../images/planner-thumbnail.png">
+    </a>
+  </div>
+  <h3>Trip Planner</h3>
+  <h4>Small business web application </h4>
+  </div>
+
+  <div class="other-preview">
+  <div class="thumbnail">
+    <a href="../projects/trail-listing-service.html">
+    <img src="../images/listing-thumbnail.png">
+    </a>
+  </div>
+  <h3>Trail Listings</h3>
+  <h4>Searchable database</h4>
+  </div>
+
+  <div class="other-preview">
+  <div class="thumbnail">
+      <a href="../projects/team-management-app.html">
+      <img src="../images/team-thumbnail.png">
       </a>
-
-      <div>
-        <ul class="nav-list">
-          
-          
-          <li class="nav-option"><a href="/">Portfolio</a></li>
-          </a>
-
-          <li class="nav-option"><a href="/about">About</a></li>
-          
-          <li class="nav-option"><a href="/process">Process</a></li>
-
-          <!--
-          <li class="nav-option"><a href="../images/resume_allison_milchling_11.15.2016.pdf" target="_blank">Resume</a></li>
-
-          <li class="nav-option"><a href="/contact">Contact</a></li>-->
-        </ul>
-      </div>
     </div>
+    <h3>Team Management</h3>
+    <h4>Productivity app</h4>
+  </div>
+  </div>
+  </div>
+  
+  
+<!-- FOOTER -->
+  <div id="footer">
 
-    <!-- NAV BAR -->
-    <div class="s-nav-container">
-      <a href="/">
-      <div class=" s-site-title">
-        <img class="logo" src="../images/am.png">
-      </div>
-      </a>
+  <div id="connect">
+  <h2>WAYS TO CONNECT</h2>
+  
+  <div id="social">
+  
+  <div class="icon">
+  <a href="https://www.linkedin.com/in/amilchling/" target="_blank"><img src="../images/linkedin.svg"></a>
+  </div>
+  <div class="icon">
+  <a href="https://twitter.com/amilchling" target="_blank"><img src="../images/twitter.svg"></a>
+  </div>
+  <div class="icon">
+  <a href="https://medium.com/@amilchling" target="_blank"><img src="../images/medium.svg"></a>
+  </div>
 
-      <div>
-        <ul class="s-nav-list">
-          
-          
-          <li class="s-nav-option"><a href="/">Portfolio</a></li>
-          </a>
+  </div>
 
-          <li class="s-nav-option"><a href="/about">About</a></li>
-          
-          <li class="s-nav-option"><a href="/process">Process</a></li>
+  <h3><a href="mailto:amilchling@gmail.com">amilchling@gmail.com</a></h3>
+  <h5>©2017 Allison Milchling</h5>
+  </div>
 
-          <li class="nav-option s-nav-option"><a href="../images/resume_allison_milchling_11.15.2016.pdf" target="_blank">Resume</a></li>
-
-        </ul>
-      </div>
-    </div>
-    
-     <!-- TITLE -->
-    <div class="project-section">
-      <div class="project-title">
-        <h1>Trip Viewer Mobile App</h1>
-      </div>
-      <div class="project-image-main">
-      <img src="../images/trip-viewer-main.jpg">
-      </div>
-
-      <!-- CONTENT -->
-      <div class="case-study">
-        <h2>Problem: Backpackers are required to pack multiple printed and electronic resources to complete a trip safely</h2>
-        <p>The <a href="../projects/trip-planner" target="_blank">trip planner web application</a> was created as a simple, thorough tool for backpackers to plan safe trips. However, once on the trail, these backpackers had no way to benefit from the planning they did back home on their computer. People still needed to pack maps, elevation profiles, guidebooks, notebooks, and phones to be properly prepared for their trips. </p>
-        <p>I was tasked with creating a mobile application that translated the appropriate amount of information and resources over to a central mobile solution. This would ensure a substantial user payout during their trip.</p>
-        <h2>Hypothesis: Backpackers would benefit from a comprehensive mobile experience on the trail</h2>
-        <p>I went through each feature in the desktop application and gathered the ones that would be the most relevant on the trail. I left out information that was important to know beforehand, but became less valuable once a trip started. For example, whether or not pets are allowed on the trail is a good thing to know beforehand, but once you're on the trail pet-free, that information has already served it's purpose.</p>
-        <p>My strategy for what to focus on broke down into three areas:</p>
-        <ul id="bullets">
-          <li id="bullets">Things that helped make a safe trip: weather conditions, nearby contacts and amenities, and news alerts.</li>
-          <li id="bullets">Planning features that would be useful on mobile: packing list, other pre-trip checklists, and a limited version of the daily itinerary for on-the-go planning and reference. </li>
-          <li id="bullets">Per the original scope of the mobile app from the client, I included a journal within the app. Trip documentation is a common part of the hiking experience and our overarching mission for this project was to create a single, holistic solution under one roof.</li>
-        </ul>
-
-         <div class="project-image">
-      <img src="../images/trip-viewer-update.jpg">
-      </div>
-
-        <h2>User Feedback: Hiker mobile usage falls on a spectrum</h2>
-        <p>With limited resources allocated for user research, the feedback for version 1.0 was light and informal. After connecting with ultralight backpackers on Reddit and receiving notes from a couple of team members, I discovered that on-trail mobile usage fell along a spectrum.</p>
-        <p>The primary reason experienced, ultralight backpackers tend to pack their phones is for safety. Preserving battery life is important so that the phone can be used in case of emergency. Offline experiences (whether accessible digitally via airplane mode or physically as printed out PDFs) were essential for this group. This group's approach to the app was as a last-resort reference to check unexpected weather conditions and other volatile characteristics of a hike. For them, if everything was going well, they saw no need for this app.</p>
-        <p>I also discovered -- from the ultralight group's feedback -- that the largest pain point that backpackers have is getting trustworthy information regarding water availability. Our app needed to provide a preliminary approach to solving that problem in order to provide the missing link to a holistic backpacker resource.</p>
-        <p>“REI hikers” were the term we gave less experienced hikers who had a tendency to do less planning beforehand. From talking with this group, I realized that our app would be a larger factor in the success of their experience. This group would rely on the features of our mobile app on a more daily basis compared to the experienced hikers.</p>
-
-        <div class="project-image">
-      <img src="../images/trip-viewer-wireframes.jpg">
-      </div>
-
-        <h2>Feature Edits: Important information needs to be the easiest to access</h2>
-        <p>Below is how our initial hypothesis evolved based on user feedback:</p>
-        <p class="bold">Trip Main Page</p>
-        <ul id="bullets">
-          <li id="bullets">The initial version of this was merely a navigation step. I needed to create a greater, dashboard-style purpose.</li>
-          <li id="bullets">I created a feed for weather and alerts, allowing for immediate, at-a-glance access to the information that could impact their trip the most.</li>
-          <li id="bullets">I added a map view of the trail.</li>
-          <li id="bullets">I created more value around the daily itinerary preview based on whether it was being viewed before, during, or after the trip.</li>
-        </ul>
-        <p class="bold">Map</p>
-        <ul id="bullets">
-          <li id="bullets">Because trail navigation is a central part of a backpacking trip, I included basic navigation support despite my initial intention to postpone it for a later iteration.</li>
-        </ul>
-        <p class="bold">Weather Forecasts</p>
-        <ul id="bullets">
-          <li id="bullets">It became clear that, in the mind of a hiker, a weather forecast is a type of alert. I combined weather with alerts, creating a central place to access the most impactful information.</li>
-          <li id="bullets">I linked to specialized forecasts so users could easily navigate to snow and tide charts when applicable.</li>
-          <li id="bullets">I added a date picker so that the mobile app became useful for checking forecasts for longer trips.</li>
-        </ul>
-        <p class="bold">News and Alerts</p>
-        <ul id="bullets">
-          <li id="bullets">I removed this feature because related articles did not pick up traction as an on-trail resource.</li>
-        </ul>
-        <p class="bold">Packing and Checklists</p>
-        <ul id="bullets">
-          <li id="bullets">These features are only useful before a trip, so I grouped them to take up less space in the design. </li>
-        </ul>
-        <p class="bold">Crowdsourcing</p>
-        <ul id="bullets">
-          <li id="bullets">My client wanted to include a way for users to report water and safety conditions. It was clear that water reporting was one of the most critical things backpackers want to know about, so crowdsouring became our way of addressing that in 1.0.</li>
-        </ul>
-        <p class="bold">Syncing</p>
-        <ul id="bullets">
-          <li id="bullets">I had to add clear and simple cues for the user to understand the sync status with the web app.</li>
-        </ul>
-      
-      <div class="project-image">
-      <img src="../images/trip-viewer-proto.gif">
-      </div>
-      
-      <div class="project-image">
-      <img src="../images/trip-viewer-itineraries.jpg">
-      </div>
-
-        <h2>Specific Challenge: Finding the right solution for itinerary planning</h2>
-        <p>I received varied feedback concerning the process for planning each day’s itinerary. Although I created a very basic solution for 1.0, I needed to make sure it was the right foundation for future iteration. To narrow down the path daily itinerary planning would take, I started by building a prototype for each of the four different ideas that had surfaced in testing. The ideas were a bare bones planner, an incremental checkpoint planner, a map-based planner, and a planner based on a series of points on a spreadsheet. I embedded each idea within the main mobile project. </p>
-        <p>I am still collaborating with my client and the users in order to land on a solution that properly balances functionality for the widest group of use cases. If done the correct way, this feature has the potential to empower a larger range of backpackers. My hypothesis, based on prioritizing "REI hikers", is that text and map-based input will win out over the spreadsheet version.</p>
-
-        <div class="project-image">
-      <img src="../images/trip-viewer-journal.jpg">
-      </div>
-
-        <h2>Reflection: What I would do differently and future plans</h2>
-        <ul id="bullets">
-          <li id="bullets">I am not content with the layout for the main trip page. I would like to collaborate with a UI designer to prioritize the layout's improvement and work together to establish a final visual design.</li>
-          <li id="bullets">Because the journaling component is such a large feature, I would remove it from this app and make it a stand alone entity. It would be more inviting to a wider range users -- including those are are not extensively planning their trips.</li>
-          <li id="bullets">I would also like to explore integrating the resource section of this app (our value proposition within the industry) with GaiaGPS. This would eliminate the burden of continuing to grow navigation functionality in-house. Since GaiaGPS is the best navigation app that hikers are already using, I believe integrating the value of our service into theirs would be a more seamless way to acquire an early user base and to introduce and grow our product within the industry.</li>
-          <li id="bullets">I also plan to expand the mobile planning functionality to cater to the “REI hiker” segment. Testing has shown that they are the most likely candidates to adopt the limited mobile functionality over the extended web application (which caters to experienced hikers). My current hypothesis is that the mobile app will be the primary resource for “REI hikers”, while the web app will continue to grow with ultralight backpacker-level users.</li>
-        </ul>
-
-
-
-      </div>
-
-
-
-      
-      <!-- NAV -->
-    <div class="nav-box">
-    <div class="project-nav">
-      <div>
-        <a href="/projects/user-onboarding"><p>< Previous</p></a>
-      </div>
-      <div>
-        <a href="/projects/trip-planner"><p>Next ></p></a>
-      </div>
-    </div>
-    </div>
-
-   <!-- FOOTER -->
-    <div class="footer-box">
-      <div class="footer-container">
-      
-      <div class="footer-email">
-        <h3>© Allison Milchling 2016</h3>
-      </div>
-      <div class="footer-copy">
-        <a href="mailto:amilchling@gmail.com"><h3>amilchling@gmail.com</h3></a>
-      </div>
-
-      <div class="footer-social">
-        <a href="http://twitter.com/amilchling" target="blank">
-        <img id="twitter" src="../images/Twitter.png">
-        </a>
-
-        <a href="https://www.linkedin.com/in/amilchling" target="blank">
-        <img id="linkedin" src="../images/LinkedIn.png">
-        </a>
-
-        <a href="https://medium.com/@amilchling" target="blank">
-        <img id="medium" src="../images/Medium.png">
-        </a>
-
-        <a href="https://www.pinterest.com/amilchling/" target="blank">
-        <img id="pinterest" src="../images/Pinterest.png">
-        </a>
-
-        <a href="https://www.instagram.com/amilchling/" target="blank">
-        <img id="instagram" src="../images/Instagram.png">
-        </a>
-    </div> 
-    </div></div>
-    </div>
-
-      <div class="s-footer-box">
-      <div class="footer-container s-footer-container">
-            <div class="s-footer-social">
-        <a href="http://twitter.com/amilchling" target="blank">
-        <img id="twitter" src="../images/Twitter.png">
-        </a>
-
-        <a href="https://www.linkedin.com/in/amilchling" target="blank">
-        <img id="linkedin" src="../images/LinkedIn.png">
-        </a>
-
-        <a href="https://medium.com/@amilchling" target="blank">
-        <img id="medium" src="../images/Medium.png">
-        </a>
-
-        <a href="https://www.pinterest.com/amilchling/" target="blank">
-        <img id="pinterest" src="../images/Pinterest.png">
-        </a>
-
-        <a href="https://www.instagram.com/amilchling/" target="blank">
-        <img id="instagram" src="../images/Instagram.png">
-        </a>
-    </div> 
-      <div class="s-footer-copy">
-        <a href="mailto:amilchling@gmail.com"><h3>amilchling@gmail.com</h3></a>
-      </div>
-            <div class="s-footer-email">
-        <h3>© Allison Milchling 2016</h3>
-      </div>
-    </div>
-</div>
+  </div>
 
   </body>
 </html>

@@ -1,0 +1,122 @@
+/* CSS file for case study pages for AllisonMilchling.com */
+body {
+    margin: 0;
+}
+
+#work-image {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 660px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 40px;
+}
+
+#work-image img{
+    max-width: 660px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+/* Text Section */
+
+.section {
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 30px;
+    max-width: 740px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.section h2{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.section h3{
+    margin: 0;
+    padding: 0;
+}
+
+.section p{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.section a{
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    color: #4A4A4A;
+
+}
+
+.section a:hover{
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    color: #B87700;
+}
+
+.bullets {
+    font-size: 15px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    color: #4A4A4A;
+}
+
+#point {
+    font-size: 15px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    color: #4A4A4A;
+    margin-top: 5px;
+}
+
+#separator {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 740px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+}
+
+#separator hr {
+	border-color: #B87700;
+	border-width: .5px;
+}
+
+#other-work-title {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 740px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 40px;
+}
+
+.other-preview {
+    margin: 0;
+    padding: 0;
+}
+
+#footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+    background-color: #F2F2F2;
+    margin: 0 auto;
+    padding: 0;   
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 70px;
+}
