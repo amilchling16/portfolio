@@ -360,5 +360,8 @@ justify-content: flex-end;
     padding-bottom: 20px;
 }
 
+#mobile-nav2 { display: none; }
+#mobile-nav { display: none; }
+#mobile-contact { display: none; }
 
 
