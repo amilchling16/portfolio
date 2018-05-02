@@ -1,123 +1,135 @@
 /* CSS file for case study pages for AllisonMilchling.com */
-body {
-    margin: 0;
+
+/* Nav */
+#top2 {
+display: flex;
+justify-content: space-between;
+ max-width: 1600px;
+  padding-left: 5%;
+  padding-right: 5%;
+   padding-top: 20px;
+   margin: auto;
 }
 
-#work-image {
-    margin: 0 auto;
-    padding: 0;
-    max-width: 660px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 40px;
+#nav2 {
+  display: flex;
+  text-decoration: none;
+  width: 130px;
+  justify-content: flex-start;
+ 
 }
 
-#work-image img{
-    max-width: 660px;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
+#nav2 a{
+    text-decoration: none;
+    color: #4a4a4a;
 }
 
-/* Text Section */
-
-.section {
-    margin: 0 auto;
-    padding: 0;
-    margin-bottom: 30px;
-    max-width: 740px;
-    padding-left: 20px;
-    padding-right: 20px;
+#nav2 a:hover {
+    text-decoration: none;
+    box-shadow: 2px 2px 0px #C58E2A;
+    background-color: #fff;
 }
 
-.section h2{
-    margin: 0;
-    padding: 0;
+#title img{
+    max-width: 100%;
+    width: 850px;
+}
+
+#quote{
+  padding-left: 5%;
+  font-style: italic;
+}
+
+/* Case Study */
+#case-study {
+    max-width: 1240px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#case-study h2{
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+#case-study h3{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#case-study p{
+    margin-top: 0px;
     margin-bottom: 10px;
 }
 
-.section h3{
-    margin: 0;
-    padding: 0;
-}
-
-.section p{
-    margin: 0;
-    padding: 0;
-    margin-bottom: 10px;
-}
-
-.section a{
-    margin: 0;
-    padding: 0;
-    margin-top: 10px;
+#case-study a{
     color: #4A4A4A;
-
+    text-decoration: none;
 }
 
-.section a:hover{
-    margin: 0;
-    padding: 0;
-    margin-top: 10px;
-    color: #B87700;
+#case-study a:hover{
+    color: #C58E2A;
 }
 
-.bullets {
-    font-size: 15px;
-    font-family: 'Helvetica Neue', sans-serif;
-    font-weight: 300;
-    color: #4A4A4A;
+#case-study img{
+    max-width: 100%;
+    width: 850px;
 }
 
-#point {
-    font-size: 15px;
-    font-family: 'Helvetica Neue', sans-serif;
-    font-weight: 300;
-    color: #4A4A4A;
-    margin-top: 5px;
+#case-study a img{
+    cursor: zoom-in
 }
 
-#separator {
-    margin: 0 auto;
-    padding: 0;
-    max-width: 740px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 30px;
+#case-study ul{
+  font-family: Lato;
+  font-size: 16px;
+  text-align: left;
+  color: #4a4a4a;ii
 }
 
-#separator hr {
-	border-color: #B87700;
-	border-width: .5px;
+#case-study li{
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
-#other-work-title {
-    margin: 0 auto;
-    padding: 0;
-    max-width: 740px;
-    padding-left: 20px;
-    padding-right: 20px;
+
+/* Other Work */
+#selected-work2 {
+    max-width: 1240px;
+}
+
+#selected-work2 h2{
+    margin-bottom: 5px;
+    padding-bottom: 0;
+    padding-left: 40px;
+    padding-right: 40px;
     margin-top: 40px;
 }
 
-.other-preview {
-    margin: 0;
-    padding: 0;
+#work2 {
+    display: flex;
+    max-width: 880px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-right: 0px;
+    margin-top: 0px;
+    padding-left: 40px;
+}
+
+#work2 h2{
+    margin-top: 40px;
+    margin-bottom: 0px;
+    padding-bottom: 0;
+}
+
+#work2 p{
+    margin-top: 0px;
     margin-bottom: 40px;
 }
 
-#footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 140px;
-    background-color: #F2F2F2;
-    margin: 0 auto;
-    padding: 0;   
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 30px;
+#work2 img{
+    width: 400px;
+    max-width: 100%;
+    margin-top: 0;
+    padding-top: 0;
 }
