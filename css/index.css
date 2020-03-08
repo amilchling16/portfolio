@@ -1,100 +1,367 @@
 /* Main CSS file for AllisonMilchling.com */
 body {
     background-color: #ffffff;
-    margin: auto;
-    padding-top: 12%;
-    max-width: 560px;
-    min-width: 90%;
 }
 
-/* Text */
+/* Fonts */
 h1 {
-  font-family: Karla;
-  font-size: 28px;
-  font-weight: 700;
+  font-family: Catamaran;
+  font-size: 40px;
+  font-weight: 600;
   text-align: left;
-  padding-bottom: 16px;
+  color: #4a4a4a;
 }
 
 h2 {
-  font-family: Karla;
-  font-size: 18px;
-  font-weight: 700;
+  font-family: Catamaran;
+  font-size: 24px;
+  font-weight: 600;
   text-align: left;
-  color: #EF6500;
+  color: #4a4a4a;
 }
 
-h3 /* Caption text */{
-  font-family: Karla;
-  font-size: 14px;
+h3 {
+  font-family: Catamaran;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
+  color: #4a4a4a;
+}
+
+h4 {
+  font-family: Lato;
+  font-size: 12px;
   font-weight: 400;
   text-align: left;
   color: #4a4a4a;
 }
 
-h4 /* Footer text */ {
-  font-family: Karla;
-  font-size: 14px;
-  font-weight: 400;
-  text-align: left;
-  color: #414141;
-  padding-bottom: 40px;
-}
-
 p {
-  font-family: Karla;
+  font-family: Lato;
   font-size: 16px;
-  font-weight: 400;
   text-align: left;
-  color: #414141;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  color: #4a4a4a;
 }
 
-a h2:hover {
-  opacity: .5;
+.emoji {
+   font-family: apple color emoji,segoe ui emoji,notocoloremoji,segoe ui symbol,android emoji,emojisymbols,emojione mozilla;
 }
 
-a i {
+.footemoji {
+   font-family: apple color emoji,segoe ui emoji,notocoloremoji,segoe ui symbol,android emoji,emojisymbols,emojione mozilla;
+   font-size: 16px;
+}
+
+
+/* Nav */
+
+#top {
+display: flex;
+justify-content: flex-end;
+ max-width: 1600px;
+  padding-right: 5%;
+   padding-top: 20px;
+}
+
+#nav {
+  display: flex;
   text-decoration: none;
+  width: 232px;
+  justify-content: space-between;
+  text-align: right;
+ 
 }
 
-a i:hover {
-  text-decoration: none;
-  opacity: .5;
+#nav a{
+    text-decoration: none;
+    color: #4a4a4a;
 }
 
-hr {
-  color: #414141;
-  width: 560px;
-  min-width: 90%;
-  margin: auto;
-  padding-top: 32px;
-  padding-bottom: 40px;
+#nav a:hover {
+    text-decoration: none;
+    box-shadow: 2px 2px 0px #C58E2A;
+    background-color: #fff;
 }
 
-.line3 {
-  color: #414141;
-  width: 560px;
-  min-width: 90%;
-  margin: auto;
+.navemoji {
+  font-family: apple color emoji,segoe ui emoji,notocoloremoji,segoe ui symbol,android emoji,emojisymbols,emojione mozilla;
+  font-size: 20px;
+  padding-left: 9px;
+  padding-right: 8px;
+  padding-top: 3px;
+  padding-bottom: 2px;
+  border-radius: 2px;
+  border-style: solid;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-color: #4a4a4a;
+  background-color: #ffffff;
+}
+
+.navtext {
+  font-family: Catamaran;
+  font-size: 14px;
+  font-weight: 600;
+  color: #4a4a4a;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  border-radius: 2px;
+  border-style: solid;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-color: #4a4a4a;
+  background-color: #ffffff;
+}
+
+/* Title */
+.center {
+    margin: auto;
+    max-width: 930px;
+}
+
+#title {
+    max-width: 1240px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#title h1{
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+#title p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* About */
+#about {
+    max-width: 1240px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#about h2{
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+#about p{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+#about a{
+    color: #4A4A4A;
+}
+
+#about a:hover{
+    color: #C58E2A;
+}
+
+/* Work */
+#selected-work {
+    max-width: 1240px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 40px;
+}
+
+#selected-work h2{
+    margin-bottom: 5px;
+    padding-bottom: 0;
+}
+
+#work {
+    display: flex;
+    max-width: 880px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 40px;
+    padding-right: 0px;
+    margin-top: 0px;
+}
+
+#work h2{
+    margin-top: 40px;
+    margin-bottom: 0px;
+    padding-bottom: 0;
+}
+
+#work p{
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+#work img{
+    width: 400px;
+    max-width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.case img:hover{
+    box-shadow: 2px 2px 0px #C58E2A;
+}
+
+
+.case {
+    padding-right: 40px;
+}
+
+#trip-planner:hover {
+  background-image: url('trip-planner-hover.png');
+}
+
+/* writing */
+#selected-writing {
+    max-width: 1240px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 0px;
+}
+
+#selected-writing h2{
+    margin-bottom: 0px;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#writing {
+    max-width: 1240px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#writing h3{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#writing p{
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.read {
+  font-family: Catamaran;
+  font-size: 14px;
+  font-weight: 600;
+  color: #4a4a4a;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 5px;
+  padding-bottom: 4px;
+  border-radius: 2px;
+  border-style: solid;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-color: #4a4a4a;
+  background-color: #ffffff;
+}
+
+#writing a{
+    text-decoration: none;
+    color: #4a4a4a;
+}
+
+#writing a:hover{
+    color: #C58E2A;
+}
+
+.read:hover {
+    text-decoration: none;
+    box-shadow: 2px 2px 0px #C58E2A;
+}
+
+.article {
+    margin-bottom: 45px;
+}
+
+/* Footer */
+
+#footer {
+  padding-right: 40px;
+  padding-left: 40px;
   padding-top: 40px;
-  padding-bottom: 40px;
+  margin-bottom: 10px;
+  width: 315px;
+  margin: auto;
 }
 
-#gradient {
-  background-image: linear-gradient(to right,#9D9800,#EF6500,#0098F6,#EF6500,#9D9800);
-  color: transparent;
-   -webkit-background-clip: text;
-  background-clip: text;
+#contact {
+  display: flex;
+  text-decoration: none;
+  justify-content: space-between;
 }
 
-.subtitle {
-  padding-bottom: 8px;
+#contact a{
+    text-decoration: none;
+    color: #4a4a4a;
 }
 
-.email {
-  padding-top: 8px;
-  padding-bottom: 40px;
+.footsymbol img{
+  height: 16px;
 }
 
+.footsymbol {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 7px;
+  padding-bottom: 5px;
+  border-radius: 2px;
+  border-style: solid;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-color: #4a4a4a;
+  background-color: #ffffff;
+}
+
+#contact a:hover {
+    text-decoration: none;
+    box-shadow: 2px 2px 0px #C58E2A;
+}
+
+.foottext {
+  font-family: Catamaran;
+  font-size: 14px;
+  font-weight: 600;
+  color: #4a4a4a;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 5px;
+  padding-bottom: 4px;
+  border-radius: 2px;
+  border-style: solid;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-color: #4a4a4a;
+  background-color: #ffffff;
+}
+
+#copy h4{
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#mobile-nav2 { display: none; }
+#mobile-nav { display: none; }
+#mobile-contact { display: none; }
+
+© 2020 GitHub, Inc.
