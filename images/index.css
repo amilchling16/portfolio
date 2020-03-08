@@ -1,0 +1,99 @@
+/* Main CSS file for AllisonMilchling.com */
+body {
+    background-color: #ffffff;
+    margin: auto;
+    padding-top: 12%;
+    max-width: 560px;
+    min-width: 90%;
+}
+
+/* Text */
+h1 {
+  font-family: Karla;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: left;
+  padding-bottom: 16px;
+}
+
+h2 {
+  font-family: Karla;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+  color: #EF6500;
+}
+
+h3 /* Caption text */{
+  font-family: Karla;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  color: #4a4a4a;
+}
+
+h4 /* Footer text */ {
+  font-family: Karla;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  color: #414141;
+  padding-bottom: 40px;
+}
+
+p {
+  font-family: Karla;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  color: #414141;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+a h2:hover {
+  opacity: .5;
+}
+
+a i {
+  text-decoration: none;
+}
+
+a i:hover {
+  text-decoration: none;
+  opacity: .5;
+}
+
+hr {
+  color: #414141;
+  width: 560px;
+  min-width: 90%;
+  margin: auto;
+  padding-top: 32px;
+  padding-bottom: 40px;
+}
+
+.line3 {
+  color: #414141;
+  width: 560px;
+  min-width: 90%;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#gradient {
+  background-image: linear-gradient(to right,#9D9800,#EF6500,#0098F6,#EF6500,#9D9800);
+  color: transparent;
+   -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.subtitle {
+  padding-bottom: 8px;
+}
+
+.email {
+  padding-top: 8px;
+  padding-bottom: 40px;
+}
