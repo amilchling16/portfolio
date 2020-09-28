@@ -99,6 +99,8 @@ hr {
 
 .email {
   padding-top: 8px;
+  margin-left: 0px;
+  padding-right: 24px;
 }
 
 .links {
