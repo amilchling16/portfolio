@@ -73,8 +73,7 @@ a {
 
 
 hr {
-  border-color: #E8E8E8;
-  border-width: 1px;
+  border-top: 1px #E8E8E8;
   margin: auto;
 }
 
