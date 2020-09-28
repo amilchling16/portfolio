@@ -61,20 +61,29 @@ p {
   padding-bottom: 8px;
 }
 
+span {
+  font-family: Karla;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: left;
+  margin: auto;
+  color: #414141;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
 a:hover {
   opacity: .7;
 }
 
 a {
-  color: #0098F6;
   font-weight: 700;
   text-decoration: none;
 }
 
-.emaillink {
-  color: #414141;
+a p{
+  color: #0098F6;
 }
-
 
 hr {
   border-top: 1px #E8E8E8;
