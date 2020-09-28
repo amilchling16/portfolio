@@ -71,10 +71,8 @@ a {
   text-decoration: none;
 }
 
-a .email {
+emaillink {
   color: #414141;
-  font-weight: 700;
-  text-decoration: none;
 }
 
 
