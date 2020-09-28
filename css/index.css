@@ -71,6 +71,12 @@ a {
   text-decoration: none;
 }
 
+a .email {
+  color: #414141;
+  font-weight: 700;
+  text-decoration: none;
+}
+
 
 hr {
   border-top: 1px #E8E8E8;
@@ -115,6 +121,6 @@ hr {
   display:flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
 }
 
