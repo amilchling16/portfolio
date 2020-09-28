@@ -30,7 +30,7 @@ h2 {
 
 h3 /* Caption text */{
   font-family: Karla;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
   text-align: left;
   margin: auto;
@@ -41,7 +41,7 @@ h3 /* Caption text */{
 
 h4 /* Footer text */ {
   font-family: Karla;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
   text-align: left;
   margin: auto;
@@ -52,7 +52,7 @@ h4 /* Footer text */ {
 
 p {
   font-family: Karla;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   text-align: left;
   margin: auto;
@@ -72,8 +72,8 @@ a {
 
 
 hr {
-  border-color: #414141;
-  border-width: .5px;
+  border-color: #E8E8E8;
+  border-width: 1px;
   margin: auto;
 }
 
